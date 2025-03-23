@@ -40,7 +40,7 @@ export default function Home() {
 
             {/* Navigation with fixed positioning */}
             <div className="absolute bottom-4 left-8 z-50 flex flex-col space-y-1 bg-black bg-opacity-80 p-1 md:p-0 md:bg-transparent">
-              <a href="#projects" className="hover-underline-animation">
+              <a href="#glass-carousel" className="hover-underline-animation">
                 PROJECTS.
               </a>
               <a href="#videos" className="hover-underline-animation">
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* White Section with Glossy Glass Panel Carousel */}
-      <section className="bg-white text-black pt-40 pb-24 px-6 md:px-12 overflow-hidden">
+      <section id="glass-carousel" className="bg-white text-black pt-40 pb-24 px-6 md:px-12 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           {/* Main heading */}
           <h2 className="text-2xl md:text-3xl font-terminal uppercase mb-4 tracking-tight text-center font-bold">
@@ -120,16 +120,6 @@ export default function Home() {
           </p>
 
           {/* Glossy Glass Panel Carousel */}
-          <GlassCarousel />
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="bg-black text-white py-24">
-        <div className="container mx-auto px-4">
-          <h2 className="text-xl md:text-2xl font-terminal uppercase mb-12 tracking-tight">
-            PROJECTS.EXE
-          </h2>
           <GlassCarousel />
         </div>
       </section>
