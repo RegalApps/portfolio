@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="font-terminal uppercase relative">
       {/* Hero Section with fixed height */}
-      <section className="h-screen relative overflow-hidden">
+      <section className="h-[90vh] md:h-screen relative overflow-hidden">
         {/* SVG overlay with fixed positioning - only in hero section */}
         <div className="absolute inset-0 z-20 flex items-end justify-end pointer-events-none">
           <img
