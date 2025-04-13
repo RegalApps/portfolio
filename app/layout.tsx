@@ -10,16 +10,9 @@ export const metadata: Metadata = {
   title: "KAZI UNCENSORED",
   description: "PROJECTS. ESSAYS. VIDEOS.",
   generator: 'v0.dev',
-  icons: [
-    {
-      rel: 'icon',
-      url: './favicon.ico',
-    },
-    {
-      rel: 'icon',
-      url: './icon.ico',
-    }
-  ]
+  icons: {
+    icon: '/icon.ico'
+  }
 }
 
 export default function RootLayout({
