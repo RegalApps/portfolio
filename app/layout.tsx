@@ -1,11 +1,14 @@
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "KAZI UNCENSORED",
   description: "PROJECTS. ESSAYS. VIDEOS.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -14,12 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="font-terminal">{children}</body>
+    <html lang="en" className={inter.className}>
+      <body>
+        {children}
+      </body>
     </html>
   )
 }
-
-
-
-import './globals.css'

@@ -2,6 +2,7 @@
 
 import { GlassCarousel } from "./components/glass-carousel"
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         {/* Layout container with fixed structure */}
         <div className="flex flex-col h-full">
           {/* Top white section with fixed height */}
-          <div className="bg-white text-black h-[300px] w-full px-[69px] relative z-10">
+          <div className="bg-white text-black h-[150px] md:h-[180px] w-full px-[69px] relative z-10">
             {/* Corner text elements with fixed positions */}
             <div className="absolute top-4 left-4 text-black font-extrabold text-lg z-30">DOMINATE</div>
             <div className="absolute top-4 right-4 text-black font-extrabold text-lg z-30">RELENTLESS</div>
@@ -30,25 +31,25 @@ export default function Home() {
 
           {/* Middle black section with flex-grow to adapt length */}
           <div className="bg-black text-white flex-grow w-full px-12 flex flex-col justify-between relative z-10">
-            {/* Left-aligned text with fixed positioning */}
-            <div className="mt-16 relative h-[calc(6.98rem+4.65rem+70px)]">
+            {/* Left-aligned text with adjusted positioning */}
+            <div className="mt-8 md:mt-12 relative h-[calc(6.98rem+4.65rem+70px)]">
               <div className="absolute top-[20px] -left-4 text-[4.65rem] leading-none">KAZI</div>
-              <div className="absolute top-[calc(4.65rem+20px)] -left-4 text-[6.98rem] font-normal leading-none">
+              <div className="absolute top-[calc(4.65rem+20px)] -left-4 text-[1.85rem] sm:text-[6.98rem] font-normal leading-none">
                 UNCENSORED
               </div>
             </div>
 
             {/* Navigation with fixed positioning */}
             <div className="absolute bottom-4 left-8 z-50 flex flex-col space-y-1 bg-black bg-opacity-80 p-1 md:p-0 md:bg-transparent">
-              <a href="#glass-carousel" className="hover-underline-animation">
+              <Link href="#glass-carousel" className="hover:opacity-80 transition-opacity">
                 PROJECTS.
-              </a>
-              <a href="#videos" className="hover-underline-animation">
+              </Link>
+              <Link href="#videos" className="hover:opacity-80 transition-opacity">
                 VIDEOS.
-              </a>
-              <a href="#essays" className="hover-underline-animation">
+              </Link>
+              <Link href="#essays" className="hover:opacity-80 transition-opacity">
                 ESSAYS.
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -128,9 +129,7 @@ export default function Home() {
       <section id="videos" className="bg-black text-white py-24 pb-32">
         <div className="max-w-5xl mx-auto pt-16">
           {/* Section heading */}
-          <h2 className="text-xl md:text-2xl font-terminal uppercase mb-6 tracking-tight">
-            FOUNDER_INTERVIEWS_<span className="text-gray-400 animate-pulse">|</span>
-          </h2>
+          <h2 className="text-2xl font-bold mb-8">FOUNDER INTERVIEWS</h2>
 
           {/* Grid of interview cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -152,8 +151,8 @@ export default function Home() {
                   <span className="text-3xl text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">▶</span>
                 </div>
               </div>
-              <h3 className="text-base font-bold mb-1">DAN ROMERO</h3>
-              <p className="text-xs opacity-60 mb-2">FOUNDER CEO @ FARCASTER</p>
+              <h3 className="text-base font-normal">DAN ROMERO</h3>
+              <p className="text-xs opacity-60 -mt-1 mb-2">FOUNDER CEO @ FARCASTER</p>
               <p className="text-xs leading-snug">
                 ON BUILDING SOCIAL NETWORKS AND THE FUTURE OF CRYPTO
               </p>
@@ -177,8 +176,8 @@ export default function Home() {
                   <span className="text-3xl text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">▶</span>
                 </div>
               </div>
-              <h3 className="text-base font-bold mb-1">JULIANNA LAMB</h3>
-              <p className="text-xs opacity-60 mb-2">FOUNDER CTO @ STYTCH</p>
+              <h3 className="text-base font-normal">JULIANNA LAMB</h3>
+              <p className="text-xs opacity-60 -mt-1 mb-2">FOUNDER CTO @ STYTCH</p>
               <p className="text-xs leading-snug">
                 BUILDING 0-1 IN ENTERPRISE SAAS AND AI'S IMPACT ON AUTH
               </p>
@@ -202,8 +201,8 @@ export default function Home() {
                   <span className="text-3xl text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">▶</span>
                 </div>
               </div>
-              <h3 className="text-base font-bold mb-1">ANDREW LEE</h3>
-              <p className="text-xs opacity-60 mb-2">FOUNDER @ FIREBASE</p>
+              <h3 className="text-base font-normal">ANDREW LEE</h3>
+              <p className="text-xs opacity-60 -mt-1 mb-2">FOUNDER @ FIREBASE</p>
               <p className="text-xs leading-snug">
                 BUILDING 0-1 IN DEVELOPER TOOLS AND EXITING TO GOOGLE
               </p>
@@ -227,8 +226,8 @@ export default function Home() {
                   <span className="text-3xl text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">▶</span>
                 </div>
               </div>
-              <h3 className="text-base font-bold mb-1">HXSAIN</h3>
-              <p className="text-xs opacity-60 mb-2">YOUTUBER 2.8M SUBS</p>
+              <h3 className="text-base font-normal">HXSAIN</h3>
+              <p className="text-xs opacity-60 -mt-1 mb-2">YOUTUBER 2.8M SUBS</p>
               <p className="text-xs leading-snug">
                 HOW TO GO 0-1 ON YOUTUBE AND THE IMPORTANCE OF TRENDS
               </p>
@@ -241,77 +240,75 @@ export default function Home() {
       <section id="essays" className="bg-white text-black py-8 px-4 md:px-8">
         <div className="max-w-5xl mx-auto pt-16">
           {/* Section heading */}
-          <h2 className="text-xl md:text-2xl font-terminal uppercase mb-4 tracking-tight">
-            ESSAYS_<span className="text-gray-400 animate-pulse">|</span>
-          </h2>
-
-          {/* Essays list in terminal style */}
-          <div className="space-y-3">
-            {/* Essay 1 */}
-            <div className="border-l border-black pl-3">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <h3 className="text-base font-bold">FOUNDER-LED SALES: THE UNFAIR ADVANTAGE</h3>
-                <span className="text-gray-600 text-[10px] md:text-xs">2023-11-15</span>
+          <h2 className="text-2xl font-bold mb-8">ESSAYS</h2>
+            
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-xl font-bold mb-2">AI AGENTS: THE END OF THE APP PARADIGM</h3>
+              <p className="text-gray-600 text-sm mb-4">How AI agents will replace traditional software interfaces and what it means for product designers.</p>
+              <div className="flex items-center gap-4">
+                <span className="text-gray-400 text-sm">Apr 12, 2025</span>
+                <a className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300" href="/articles/ai-agents">LEARN</a>
               </div>
-              <p className="text-gray-600 text-xs md:text-sm mt-0.5 mb-1.5 leading-snug">
-                WHY FOUNDERS WHO SELL OUTPERFORM THOSE WHO DON'T. THE PSYCHOLOGY OF BUYING FROM CREATORS VS HIRED GUNS.
-              </p>
-              <a
-                href="#"
-                className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300"
-              >
-                READ_POST.EXE
-              </a>
             </div>
 
-            {/* Essay 2 */}
-            <div className="border-l border-black pl-3">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <h3 className="text-base font-bold">TIME-TO-VALUE: THE ONLY METRIC THAT MATTERS</h3>
-                <span className="text-gray-600 text-[10px] md:text-xs">2023-09-22</span>
+            <div>
+              <h3 className="text-xl font-bold mb-2">THE TERMINAL AESTHETIC: FUNCTION OVER FORM</h3>
+              <p className="text-gray-600 text-sm mb-4">How aerospace cockpit design and AI are reshaping the future of software interfaces.</p>
+              <div className="flex items-center gap-4">
+                <span className="text-gray-400 text-sm">Apr 08, 2025</span>
+                <a className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300" href="/articles/terminal-aesthetic">LEARN</a>
               </div>
-              <p className="text-gray-600 text-xs md:text-sm mt-0.5 mb-1.5 leading-snug">
-                HOW THE FASTEST GROWING B2B SAAS COMPANIES OPTIMIZE FOR IMMEDIATE VALUE DELIVERY OVER EVERYTHING ELSE.
-              </p>
-              <a
-                href="#"
-                className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300"
-              >
-                READ_POST.EXE
-              </a>
             </div>
 
-            {/* Essay 3 */}
-            <div className="border-l border-black pl-3">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <h3 className="text-base font-bold">THE TERMINAL AESTHETIC: FUNCTION OVER FORM</h3>
-                <span className="text-gray-600 text-[10px] md:text-xs">2023-08-07</span>
+            <div>
+              <h3 className="text-xl font-bold mb-2">TIME-TO-VALUE: THE ONLY METRIC THAT MATTERS</h3>
+              <p className="text-gray-600 text-sm mb-4">How the fastest growing B2B SaaS companies optimize for immediate value delivery over everything else.</p>
+              <div className="flex items-center gap-4">
+                <span className="text-gray-400 text-sm">Feb 28, 2025</span>
+                <a className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300" href="/articles/time-to-value">LEARN</a>
               </div>
-              <p className="text-gray-600 text-xs md:text-sm mt-0.5 mb-1.5 leading-snug">
-                WHY THE RETURN TO COMMAND-LINE INTERFACES AND BRUTALIST DESIGN IS WINNING IN B2B SOFTWARE.
-              </p>
-              <a
-                href="#"
-                className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300"
-              >
-                READ_POST.EXE
-              </a>
             </div>
 
-            {/* Essay 4 */}
-            <div className="border-l border-black pl-3">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <h3 className="text-base font-bold">AI AGENTS: THE END OF THE APP PARADIGM</h3>
-                <span className="text-gray-600 text-[10px] md:text-xs">2023-07-14</span>
+            <div>
+              <h3 className="text-xl font-bold mb-2">FOUNDER-LED SALES: THE UNFAIR ADVANTAGE</h3>
+              <p className="text-gray-600 text-sm mb-4">Why founders who sell outperform those who don't. The psychology of buying from creators vs hired guns.</p>
+              <div className="flex items-center gap-4">
+                <span className="text-gray-400 text-sm">Jan 15, 2025</span>
+                <a className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300" href="/articles/founder-led-sales">LEARN</a>
               </div>
-              <p className="text-gray-600 text-xs md:text-sm mt-0.5 mb-1.5 leading-snug">
-                HOW AI AGENTS WILL REPLACE TRADITIONAL SOFTWARE INTERFACES AND WHAT IT MEANS FOR PRODUCT DESIGNERS.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* My Story Section */}
+      <section id="my-story" className="bg-black text-white py-16 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          {/* Section heading */}
+          <h2 className="text-2xl font-bold mb-8">MY STORY</h2>
+          
+          <div className="space-y-8">
+            <div>
+              <p className="text-sm md:text-base leading-relaxed text-left max-w-3xl">
+                I&apos;ve been working in startups for the past 5 years. I built a personal brand on (12.5k) LinkedIn and (33k) Warpcaster to build. I left my job as a data engineer at the department of defense to build. Won $100k grants to build, raised some angel capital to build and even left the comforts of home to live in San Francisco to build. I manage a community of 220,000 founders.
               </p>
-              <a
-                href="#"
-                className="inline-block border border-black px-2 py-0.5 text-[10px] hover:bg-black hover:text-white transition-colors duration-300"
+            </div>
+
+            <div>
+              <p className="text-sm md:text-base leading-relaxed text-left max-w-3xl">
+                I&apos;m a builder that loves the thrill of the build. Nothing stimulates me more than figuring out the puzzle that is PMF. B2B SaaS is my passion.<br />
+                I interview other builders like you<br />
+                Founder of Firebase, Stytch, Warpcaster, etc on my podcast. If you want to chat and you&apos;re building something interesting I&apos;m not hard to find.
+              </p>
+            </div>
+
+            <div className="flex justify-start">
+              <a 
+                href="mailto:kazi@thred.ai" 
+                className="inline-block bg-white text-black px-4 py-2 text-xs font-bold hover:bg-opacity-90 transition-all duration-200 tracking-wide"
               >
-                READ_POST.EXE
+                GRAB COFFEE
               </a>
             </div>
           </div>
@@ -323,21 +320,6 @@ export default function Home() {
         .hover-underline-animation {
           position: relative;
           text-decoration: none;
-        }
-        
-        .hover-underline-animation::after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 1px;
-          bottom: 0;
-          left: 0;
-          background-color: white;
-          transition: width 0.3s;
-        }
-        
-        .hover-underline-animation:hover::after {
-          width: 100%;
         }
       `}</style>
     </div>
