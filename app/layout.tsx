@@ -9,10 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "KAZI UNCENSORED",
   description: "PROJECTS. ESSAYS. VIDEOS.",
-  generator: 'v0.dev',
-  icons: {
-    icon: 'favicon.ico'
-  }
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
