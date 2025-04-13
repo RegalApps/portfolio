@@ -21,12 +21,12 @@ export default function Home() {
         {/* Layout container with fixed structure */}
         <div className="flex flex-col h-full">
           {/* Top white section with fixed height */}
-          <div className="bg-white text-black h-[150px] md:h-[180px] w-full px-[69px] relative z-10">
+          <div className="bg-white text-black h-[80px] md:h-[180px] w-full px-[69px] relative z-10">
             {/* Corner text elements with fixed positions */}
-            <div className="absolute top-4 left-4 text-black font-extrabold text-lg z-30">DOMINATE</div>
-            <div className="absolute top-4 right-4 text-black font-extrabold text-lg z-30">RELENTLESS</div>
-            <div className="absolute bottom-4 left-4 text-black font-extrabold text-lg z-30">EXECUTE</div>
-            <div className="absolute bottom-4 right-4 text-black font-extrabold text-lg z-30">FEROCITY</div>
+            <div className="absolute top-4 left-4 text-black font-extrabold text-lg z-30 hidden md:block">DOMINATE</div>
+            <div className="absolute top-4 right-4 text-black font-extrabold text-lg z-30 hidden md:block">RELENTLESS</div>
+            <div className="absolute top-1/2 -translate-y-1/2 left-4 text-black font-extrabold text-lg z-30">EXECUTE</div>
+            <div className="absolute top-1/2 -translate-y-1/2 right-4 text-black font-extrabold text-lg z-30">FEROCITY</div>
           </div>
 
           {/* Middle black section with flex-grow to adapt length */}
