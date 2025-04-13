@@ -10,11 +10,11 @@ export default function Home() {
       {/* Hero Section with fixed height */}
       <section className="h-screen relative overflow-hidden">
         {/* SVG overlay with fixed positioning - only in hero section */}
-        <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
+        <div className="absolute inset-0 z-20 flex items-end justify-end pointer-events-none">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kazi-GCOyN7IPNWNMTIiN29rQtREA8R6gvl.svg"
             alt="Kazi"
-            className="h-screen w-auto max-w-none translate-x-[10%] object-contain object-center"
+            className="h-[50vh] md:h-[80vh] w-auto max-w-none object-contain object-right-bottom translate-x-[15%] translate-y-[10%] absolute bottom-0 right-0"
           />
         </div>
 
