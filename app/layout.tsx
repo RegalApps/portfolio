@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description: "PROJECTS. ESSAYS. VIDEOS.",
   generator: 'v0.dev',
   icons: {
-    icon: '/icon.png',
-    shortcut: '/icon.png',
-    apple: '/icon.png',
+    icon: [
+      { url: '/icon.png', sizes: 'any' }
+    ]
   }
 }
 
