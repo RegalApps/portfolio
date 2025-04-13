@@ -25,8 +25,8 @@ export default function Home() {
             {/* Corner text elements with fixed positions */}
             <div className="absolute top-4 left-4 text-black font-extrabold text-lg z-30 hidden md:block">DOMINATE</div>
             <div className="absolute top-4 right-4 text-black font-extrabold text-lg z-30 hidden md:block">RELENTLESS</div>
-            <div className="absolute top-1/2 -translate-y-1/2 left-4 text-black font-extrabold text-lg z-30">EXECUTE</div>
-            <div className="absolute top-1/2 -translate-y-1/2 right-4 text-black font-extrabold text-lg z-30">FEROCITY</div>
+            <div className="absolute top-1/2 -translate-y-1/2 md:top-auto md:translate-y-0 md:bottom-4 left-4 text-black font-extrabold text-lg z-30">EXECUTE</div>
+            <div className="absolute top-1/2 -translate-y-1/2 md:top-auto md:translate-y-0 md:bottom-4 right-4 text-black font-extrabold text-lg z-30">FEROCITY</div>
           </div>
 
           {/* Middle black section with flex-grow to adapt length */}
