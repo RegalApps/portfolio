@@ -1,34 +1,24 @@
 const sharp = require('sharp');
 const path = require('path');
 
-async function convertToWebp() {
+async function optimizeIcon() {
   try {
-    const inputPath = path.join(__dirname, 'thred-migration.jpeg');
-    
-    // Get image info
-    const metadata = await sharp(inputPath).metadata();
-    console.log('Original dimensions:', metadata.width, 'x', metadata.height);
-    
-    // Convert and resize
-    await sharp(inputPath)
-      .resize(800, null, {  // Set width to 800px, maintain aspect ratio
-        withoutEnlargement: true  // Don't enlarge if image is smaller
+    // Create optimized icon from the existing one
+    await sharp('public/icon.png')
+      .resize(32, 32, {
+        fit: 'contain',
+        background: { r: 0, g: 0, b: 0, alpha: 0 }
       })
-      .webp({ 
-        quality: 95,
-        effort: 6,
-        lossless: true
+      .png({
+        quality: 100,
+        compressionLevel: 9
       })
-      .toFile(path.join(__dirname, '../public/screenshots/thred-migration.webp'));
-    
-    // Get converted image info
-    const newMetadata = await sharp(path.join(__dirname, '../public/screenshots/thred-migration.webp')).metadata();
-    console.log('New dimensions:', newMetadata.width, 'x', newMetadata.height);
-    
-    console.log('Successfully converted image to WebP');
+      .toFile(path.join(__dirname, '../public/favicon.png'));
+
+    console.log('Successfully created optimized icon');
   } catch (error) {
-    console.error('Error converting image:', error);
+    console.error('Error creating icon:', error);
   }
 }
 
-convertToWebp();
+optimizeIcon();

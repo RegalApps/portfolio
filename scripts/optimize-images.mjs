@@ -46,6 +46,7 @@ async function optimizeImages(directory) {
 
 // Directories to optimize
 const directories = [
+  join(projectRoot, 'public'),  
   join(projectRoot, 'public', 'screenshots'),
   join(projectRoot, 'public', 'thumbnails'),
 ];
