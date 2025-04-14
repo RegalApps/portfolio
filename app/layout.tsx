@@ -10,23 +10,23 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Kazi Hossain",
   description: "Builder, founder, and creator focused on B2B SaaS and startups",
-  metadataBase: new URL('https://kazi.vercel.app'),
+  metadataBase: new URL('https://kazi-portfolio.vercel.app'),
   openGraph: {
     title: "Kazi Hossain",
     description: "Builder, founder, and creator focused on B2B SaaS and startups",
-    url: "https://kazi.vercel.app",
+    url: "https://kazihossain.com",
     siteName: "Kazi Hossain",
     images: [
       {
         // Instagram DM link preview (square format)
-        url: "https://kazi.vercel.app/images/Kazi_ig.png",
+        url: '/images/Kazi_ig.png',
         width: 1080,
         height: 1080,
         alt: 'Kazi Hossain'
       },
       {
         // Other platforms (Facebook, Twitter, LinkedIn)
-        url: "https://kazi.vercel.app/images/Kazi_fb.png",
+        url: '/images/Kazi_fb.png',
         width: 1200,
         height: 628,
         alt: 'Kazi Hossain'
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kazi Hossain",
     description: "Builder, founder, and creator focused on B2B SaaS and startups",
-    images: ["https://kazi.vercel.app/images/Kazi_fb.png"],
+    images: ['/images/Kazi_fb.png'],
     creator: "@kazihossain"
   },
   robots: {
@@ -64,7 +64,7 @@ export default function RootLayout({
               '@type': 'Person',
               name: 'Kazi Hossain',
               alternateName: 'KAZI UNCENSORED',
-              url: 'https://kazi.vercel.app',
+              url: 'https://kazihossain.com',
               jobTitle: 'Founder',
               description: 'Builder, founder, and creator focused on B2B SaaS and startups',
               sameAs: [
