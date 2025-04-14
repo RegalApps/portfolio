@@ -18,17 +18,17 @@ export const metadata: Metadata = {
     siteName: "Kazi Hossain",
     images: [
       {
-        // Instagram DM link preview (square format)
-        url: '/images/Kazi_ig.png',
-        width: 1080,
-        height: 1080,
-        alt: 'Kazi Hossain'
-      },
-      {
-        // Other platforms (Facebook, Twitter, LinkedIn)
+        // Facebook, Twitter, LinkedIn (1.91:1 ratio)
         url: '/images/Kazi_fb.png',
         width: 1200,
         height: 628,
+        alt: 'Kazi Hossain'
+      },
+      {
+        // Instagram DM link preview (1:1 ratio)
+        url: '/images/Kazi_ig.png',
+        width: 1080,
+        height: 1080,
         alt: 'Kazi Hossain'
       }
     ],
