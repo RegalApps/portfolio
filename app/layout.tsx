@@ -18,10 +18,18 @@ export const metadata: Metadata = {
     siteName: "Kazi Hossain",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kazi-profile-pic-5XEtZtPcLHNKpQPrEYxaUXsXqwgBMm.png",
+        // Instagram DM link preview (square format)
+        url: '/images/Kazi_ig.png',
+        width: 1080,
+        height: 1080,
+        alt: 'Kazi Hossain'
+      },
+      {
+        // Other platforms (Facebook, Twitter, LinkedIn)
+        url: '/images/Kazi_fb.png',
         width: 1200,
-        height: 1200,
-        alt: "Kazi Hossain"
+        height: 628,
+        alt: 'Kazi Hossain'
       }
     ],
     locale: "en_US",
@@ -31,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kazi Hossain",
     description: "Builder, founder, and creator focused on B2B SaaS and startups",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kazi-profile-pic-5XEtZtPcLHNKpQPrEYxaUXsXqwgBMm.png"],
+    images: ['/images/Kazi_fb.png'],
     creator: "@kazihossain"
   },
   robots: {
