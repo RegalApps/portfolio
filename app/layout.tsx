@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kazi Hossain",
     description: "Builder, founder, and creator focused on B2B SaaS and startups",
-    url: "https://kazihossain.com",
+    url: "https://www.kazihossain.com",
     siteName: "Kazi Hossain",
     images: [
       {
@@ -64,7 +64,7 @@ export default function RootLayout({
               '@type': 'Person',
               name: 'Kazi Hossain',
               alternateName: 'KAZI UNCENSORED',
-              url: 'https://kazihossain.com',
+              url: 'https://www.kazihossain.com',
               jobTitle: 'Founder',
               description: 'Builder, founder, and creator focused on B2B SaaS and startups',
               sameAs: [
