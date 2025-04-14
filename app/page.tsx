@@ -62,30 +62,26 @@ export default function Home() {
 
       {/* Terminal-style Portfolio Section */}
       <section className="bg-black text-white min-h-screen w-full pt-[calc(4rem+100px)] pb-[calc(4rem+100px)] px-6 md:px-12">
-        {/* Philosophy Text Boxes - positioned like in the reference */}
+        {/* Philosophy Text Box - unified design */}
         <div className="max-w-7xl mx-auto relative mb-20">
-          {/* Left-aligned text box - philosophy statement */}
-          <div className="bg-white text-black p-6 max-w-lg mb-10 ml-[5%] lg:ml-0">
-            <p className="text-sm md:text-base tracking-tight leading-tight">
-              I CREATE PRODUCTS WITH THE ESSENCE I WANT TO COMMUNICATE IN MIND. NOT ALL THAT DIFFERENT FROM THE GENETIC
-              FOOTPRINT IMPRINTED ON OFFSPRING...
-            </p>
-          </div>
-
-          {/* Right-aligned text box - design statement */}
-          <div className="bg-white text-black p-6 max-w-lg ml-auto mr-[10%] mt-[104px]">
-            <p className="text-sm md:text-base tracking-tight leading-tight">
-              IDEA→DESIGN→DISCOVER→BUILD WELL DESIGNED PRODUCTS CREATE THE NECESSARY VECTORS FOR CAPTURING THE ZEITGEIST
-              IN A BOTTLE.
-            </p>
+          <div className="bg-white text-black p-8 mx-[5%] lg:mx-0">
+            <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-6xl mx-auto">
+              <p className="text-sm md:text-base tracking-tight leading-tight max-w-lg">
+                I CREATE PRODUCTS WITH THE ESSENCE I WANT TO COMMUNICATE IN MIND. NOT ALL THAT DIFFERENT FROM THE GENETIC
+                FOOTPRINT IMPRINTED ON OFFSPRING...
+              </p>
+              <p className="text-sm md:text-base tracking-tight leading-tight max-w-lg">
+                EACH PRODUCT IS A REFLECTION OF MY DESIGN PHILOSOPHY. MINIMALIST, FUNCTIONAL, AND BUILT WITH PURPOSE.
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Main work display - optimized layout for terminal interfaces */}
-        <div className="w-full max-w-[100vw] mx-auto mt-20 flex flex-col lg:flex-row">
-          {/* Left terminal interface - Using the provided image directly */}
-          <div className="bg-black overflow-hidden lg:ml-[-5rem] xl:ml-[-8rem] relative -mt-[200px] lg:w-1/2">
-            <a href="https://sales-terminal.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <div className="w-full max-w-[100vw] mx-auto mt-40 flex flex-col lg:flex-row">
+          {/* Left terminal interface */}
+          <div className="bg-black lg:ml-[-5rem] xl:ml-[-8rem] relative -mt-[50px] lg:w-1/2 z-10">
+            <a href="https://sales-terminal.vercel.app/" target="_blank" rel="noopener noreferrer" className="block terminal-perspective">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cu9PclNBoGCrZwQCpERpxphiNcFggU.png"
                 alt="Terminal Interface"
@@ -94,9 +90,9 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Right terminal interface - Using the provided migration issues image */}
-          <div className="bg-black overflow-hidden lg:w-1/2 lg:ml-auto">
-            <a href="https://thred-sdk.vercel.app/" target="_blank" rel="noopener noreferrer">
+          {/* Right terminal interface */}
+          <div className="bg-black lg:mr-[-5rem] xl:mr-[-8rem] relative mt-[30px] lg:mt-[100px] lg:w-1/2 z-0">
+            <a href="https://thred-sdk.vercel.app/" target="_blank" rel="noopener noreferrer" className="block thred-perspective">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LoXJAUKx14B6KnNumBZkpqFaDjuL2x.png"
                 alt="Potential Migration Issues"
