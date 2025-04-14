@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     images: [
       {
         // Facebook, Twitter, LinkedIn (1.91:1 ratio)
-        url: '/images/Kazi_fb.png',
+        url: 'https://kazi-portfolio.vercel.app/images/Kazi_fb.png',
         width: 1200,
         height: 628,
         alt: 'Kazi Hossain'
       },
       {
         // Instagram DM link preview (1:1 ratio)
-        url: '/images/Kazi_ig.png',
+        url: 'https://kazi-portfolio.vercel.app/images/Kazi_ig.png',
         width: 1080,
         height: 1080,
         alt: 'Kazi Hossain'
@@ -39,8 +39,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kazi Hossain",
     description: "Builder, founder, and creator focused on B2B SaaS and startups",
-    images: ['/images/Kazi_fb.png'],
-    creator: "@kazihossain"
+    site: "@kazihossain",
+    creator: "@kazihossain",
+    images: [{
+      url: 'https://kazi-portfolio.vercel.app/images/Kazi_fb.png',
+      width: 1200,
+      height: 628,
+      alt: 'Kazi Hossain'
+    }]
   },
   robots: {
     index: true,
