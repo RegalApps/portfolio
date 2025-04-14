@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Kazi Hossain",
-  description: "Builder, founder, and creator focused on B2B SaaS and startups",
+  description: "Founder, creator and lover of B2B SaaS",
   metadataBase: new URL('https://kazi-portfolio.vercel.app'),
   openGraph: {
     title: "Kazi Hossain",
-    description: "Builder, founder, and creator focused on B2B SaaS and startups",
+    description: "Founder, creator and lover of B2B SaaS",
     url: "https://www.kazihossain.com",
     siteName: "Kazi Hossain",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Kazi Hossain",
-    description: "Builder, founder, and creator focused on B2B SaaS and startups",
+    description: "Founder, creator and lover of B2B SaaS",
     images: ['/images/Kazi_fb.png'],
     creator: "@kazihossain"
   },
@@ -66,7 +66,7 @@ export default function RootLayout({
               alternateName: 'KAZI UNCENSORED',
               url: 'https://www.kazihossain.com',
               jobTitle: 'Founder',
-              description: 'Builder, founder, and creator focused on B2B SaaS and startups',
+              description: 'Founder, creator and lover of B2B SaaS',
               sameAs: [
                 'https://linkedin.com/in/kazihossain',
                 'https://twitter.com/kazihossain'
