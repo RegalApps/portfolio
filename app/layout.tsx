@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Kazi Hossain",
   description: "Founder, creator and lover of B2B SaaS",
-  metadataBase: new URL('https://kazi-portfolio.vercel.app'),
+  metadataBase: new URL('https://www.kazihossain.com'),
   openGraph: {
     title: "Kazi Hossain",
     description: "Founder, creator and lover of B2B SaaS",
