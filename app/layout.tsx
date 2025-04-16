@@ -56,6 +56,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kazi Hossain" />
+        <meta name="twitter:description" content="Founder, creator and lover of B2B SaaS" />
+        <meta name="twitter:image" content="https://www.kazihossain.com/images/Kazi_fb.png" />
+        <meta name="twitter:creator" content="@kazihossain" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
