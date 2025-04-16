@@ -11,9 +11,12 @@ export default function Home() {
       <section className="h-[90vh] md:h-screen relative overflow-hidden">
         {/* SVG overlay with fixed positioning - only in hero section */}
         <div className="absolute inset-0 z-20 flex items-end justify-end pointer-events-none">
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kazi-GCOyN7IPNWNMTIiN29rQtREA8R6gvl.svg"
+          <Image
+            src="/images/kazi_header.png"
             alt="Kazi"
+            width={800}
+            height={800}
+            priority
             className="h-[50vh] md:h-[80vh] w-auto max-w-none object-contain object-right-bottom translate-x-[15%] translate-y-[10%] absolute bottom-0 right-0"
           />
         </div>
