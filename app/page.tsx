@@ -3,6 +3,7 @@
 import { GlassCarousel } from "./components/glass-carousel"
 import Image from 'next/image'
 import Link from 'next/link'
+import IdeaMazeSection from "./components/idea-maze";
 
 export default function Home() {
   return (
@@ -105,6 +106,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Idea Maze Section */}
+      <IdeaMazeSection />
 
       {/* White Section with Glossy Glass Panel Carousel */}
       <section id="glass-carousel" className="bg-white text-black pt-40 pb-24 px-6 md:px-12 overflow-hidden">
