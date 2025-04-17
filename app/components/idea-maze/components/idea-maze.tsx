@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { useMediaQuery } from "@/hooks/use-mobile"
+import { useMediaQuery } from "../hooks/use-mobile"
 
 // Sample project data - replace with your own
 const projects = [
