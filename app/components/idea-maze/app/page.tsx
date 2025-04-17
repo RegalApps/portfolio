@@ -1,4 +1,4 @@
-import IdeaMaze from "@/components/idea-maze"
+import IdeaMaze from "../index"
 
 export default function Home() {
   return (
