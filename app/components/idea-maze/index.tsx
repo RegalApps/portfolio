@@ -300,7 +300,7 @@ const ProjectCard = ({ project, position, index, isMobile }: ProjectCardProps) =
 
   return (
     <motion.div
-      className={`absolute rounded-lg backdrop-blur-sm transition-all duration-300 overflow-hidden shadow-lg border ${
+      className={`absolute rounded-none backdrop-blur-sm transition-all duration-300 overflow-hidden shadow-lg border ${
         isMobile ? "border-white/20" : "border-white/10"
       }`}
       style={{
@@ -418,15 +418,15 @@ export default function IdeaMaze() {
       <div className="max-w-7xl mx-auto">
         {/* Title Box for Idea Maze */}
         <div className="w-full max-w-3xl mx-auto mb-8">
-          <div className="bg-black rounded-xl p-8 text-white font-inter text-center shadow-lg border border-white/10">
-            <p className="text-base md:text-lg font-normal">
+          <div className="bg-black rounded-none p-8 text-white font-inter text-center shadow-lg border border-white/10">
+            <p className="text-sm md:text-base tracking-tight leading-tight">
               The winding path of insights, pivots, and lessons that lead to breakthrough products. Here, I share the frameworks, mental models, and hard-won lessons that shape my approach to building and scaling B2B SaaS.
             </p>
           </div>
         </div>
         <div
           ref={containerRef}
-          className="relative w-full bg-black rounded-xl border border-white/10"
+          className="relative w-full bg-black rounded-none border border-white/10"
           style={{
             height: isMobile ? `${mobileContainerHeight}px` : "800px",
             overflowY: isMobile ? "auto" : "hidden",
