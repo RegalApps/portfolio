@@ -1,9 +1,8 @@
 "use client"
 
-import { GlassCarousel } from "./components/glass-carousel"
+import IdeaMazeSection from "./components/idea-maze"
 import Image from 'next/image'
 import Link from 'next/link'
-import IdeaMazeSection from "./components/idea-maze";
 
 export default function Home() {
   return (
@@ -45,7 +44,7 @@ export default function Home() {
 
             {/* Navigation with fixed positioning */}
             <div className="absolute bottom-4 left-8 z-50 flex flex-col space-y-1 bg-black bg-opacity-80 p-1 md:p-0 md:bg-transparent">
-              <Link href="#glass-carousel" className="hover:opacity-80 transition-opacity">
+              <Link href="#project-images" className="hover:opacity-80 transition-opacity">
                 PROJECTS.
               </Link>
               <Link href="#videos" className="hover:opacity-80 transition-opacity">
@@ -110,21 +109,78 @@ export default function Home() {
       {/* Idea Maze Section */}
       <IdeaMazeSection />
 
-      {/* White Section with Glossy Glass Panel Carousel */}
-      <section id="glass-carousel" className="bg-white text-black pt-40 pb-24 px-6 md:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          {/* Main heading */}
-          <h2 className="text-2xl md:text-3xl font-terminal uppercase mb-4 tracking-tight text-center font-bold">
-            FOUNDER LED SALES. TIME TO VALUE. DESIGN.
-          </h2>
+      {/* White Section with Project Images */}
+      <section id="project-images" className="bg-white text-black pt-40 pb-60 px-6 md:px-12 overflow-hidden">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="flex justify-center items-center w-full overflow-visible" style={{ marginLeft: '-20px' }}>
+            {/* Rev0 DevOps Image */}
+            <div 
+              className="relative"
+              style={{
+                transform: `scale(2.3)`,
+                zIndex: 1,
+                marginLeft: '50px',
+                flex: '1 1 33.333%',
+                display: 'flex',
+                justifyContent: 'flex-end'
+              }}
+            >
+              <div className="relative aspect-video" style={{ width: '90%' }}>
+                <Image
+                  src="/screenshots/rev0-devops.png"
+                  alt="Rev0 DevOps screenshot"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
 
-          {/* Subheading */}
-          <p className="text-lg md:text-xl font-terminal uppercase mb-12 tracking-tight text-center opacity-80">
-            I tie an elastic band around my forearm, *tap *tap.. find a vein and inject b2b saas.
-          </p>
+            {/* Rev0 Campaign Image */}
+            <div 
+              className="relative"
+              style={{
+                transform: `scale(2.3)`,
+                zIndex: 2,
+                flex: '1 1 33.333%',
+                display: 'flex',
+                justifyContent: 'center'
+              }}
+            >
+              <div className="relative aspect-video" style={{ width: '90%' }}>
+                <Image
+                  src="/screenshots/rev0-campaign.png"
+                  alt="Rev0 Campaign screenshot"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
 
-          {/* Glossy Glass Panel Carousel */}
-          <GlassCarousel />
+            {/* Rev0 Sales Image */}
+            <div 
+              className="relative"
+              style={{
+                transform: `scale(2.3)`,
+                zIndex: 1,
+                marginLeft: '-50px',
+                flex: '1 1 33.333%',
+                display: 'flex',
+                justifyContent: 'flex-start'
+              }}
+            >
+              <div className="relative aspect-video" style={{ width: '90%' }}>
+                <Image
+                  src="/screenshots/rev0-sales.png"
+                  alt="Rev0 Sales screenshot"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
