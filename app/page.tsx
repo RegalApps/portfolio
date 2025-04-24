@@ -372,11 +372,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Add the CSS for the hover underline animation */}
+      {/* Add the CSS for the hover underline animation and custom cursor */}
       <style jsx global>{`
         .hover-underline-animation {
           position: relative;
           text-decoration: none;
+        }
+        
+        html, body {
+          cursor: url('/images/1.cur'), auto;
+        }
+        
+        a, button, [role="button"], input[type="submit"], input[type="button"], input[type="reset"] {
+          cursor: url('/images/2.cur'), pointer;
         }
       `}</style>
     </div>

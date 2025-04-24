@@ -1,5 +1,6 @@
 import type React from "react"
 import "./globals.css"
+import "./cursor.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from '@vercel/analytics/react'
@@ -54,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ cursor: `url('/images/sword_clicker.cur'), auto` }}>
       <head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kazi Hossain" />

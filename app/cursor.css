@@ -1,0 +1,4 @@
+/* Custom cursor styles */
+html, body, * {
+  cursor: url('/images/sword_clicker.cur'), auto !important;
+}
