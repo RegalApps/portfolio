@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="font-terminal uppercase relative">
+    <div className="font-terminal uppercase relative overflow-x-hidden">
       {/* Hero Section with fixed height */}
       <section className="h-[90vh] md:h-screen relative overflow-hidden">
         {/* SVG overlay with fixed positioning - only in hero section */}
@@ -23,21 +23,19 @@ export default function Home() {
 
         {/* Layout container with fixed structure */}
         <div className="flex flex-col h-full">
-          {/* Top white section with fixed height */}
-          <div className="bg-white text-black h-[80px] md:h-[180px] w-full px-[69px] relative z-10">
-            {/* Corner text elements with fixed positions */}
-            <div className="absolute top-4 left-4 text-black font-extrabold text-lg z-30 hidden md:block">DOMINATE</div>
-            <div className="absolute top-4 right-4 text-black font-extrabold text-lg z-30 hidden md:block">RELENTLESS</div>
-            <div className="absolute top-1/2 -translate-y-1/2 md:top-auto md:translate-y-0 md:bottom-4 left-4 text-black font-extrabold text-lg z-30">EXECUTE</div>
-            <div className="absolute top-1/2 -translate-y-1/2 md:top-auto md:translate-y-0 md:bottom-4 right-4 text-black font-extrabold text-lg z-30">FEROCITY</div>
+          {/* Top white section with fixed height - made thinner to match bottom white section */}
+          <div className="bg-white text-black h-10 w-full px-[69px] relative z-10">
+            {/* Corner text elements with font styling matching "founder DNA" */}
+            <div className="absolute top-1/2 -translate-y-1/2 right-4 text-black text-base z-30 hidden md:block">DOMINATE</div>
+            <div className="absolute top-1/2 -translate-y-1/2 left-4 text-black text-base z-30 hidden md:block">RELENTLESS</div>
           </div>
 
           {/* Middle black section with flex-grow to adapt length */}
           <div className="bg-black text-white flex-grow w-full px-12 flex flex-col justify-between relative z-10">
-            {/* Left-aligned text with adjusted positioning */}
-            <div className="mt-8 md:mt-12 relative h-[calc(6.98rem+4.65rem+70px)]">
-              <div className="absolute top-[20px] -left-4 text-[4.65rem] leading-none">KAZI</div>
-              <div className="absolute top-[calc(4.65rem+20px)] -left-4 text-[1.85rem] sm:text-[6.98rem] font-normal leading-none">
+            {/* Left-aligned text with adjusted positioning - moved up */}
+            <div className="mt-8 md:mt-12 relative h-[calc(6.98rem+6.98rem+70px)]">
+              <div className="absolute top-[20px] -left-4 text-[6.98rem] leading-none">KAZI</div>
+              <div className="absolute top-[calc(6.98rem+20px)] -left-4 text-[1.85rem] sm:text-[6.98rem] font-normal leading-none">
                 UNCENSORED
               </div>
             </div>
