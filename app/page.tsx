@@ -24,7 +24,7 @@ export default function Home() {
         {/* Layout container with fixed structure */}
         <div className="flex flex-col h-full">
           {/* Top white section with fixed height - made thinner to match bottom white section */}
-          <div className="bg-white text-black h-10 w-full px-[69px] relative z-10">
+          <div className="bg-[#F2F2F2] text-black h-10 w-full px-[69px] relative z-10">
             {/* Corner text elements with font styling matching "founder DNA" */}
             <div className="absolute top-1/2 -translate-y-1/2 right-4 text-black text-base z-30 hidden md:block">DOMINATE</div>
             <div className="absolute top-1/2 -translate-y-1/2 left-4 text-black text-base z-30 hidden md:block">RELENTLESS</div>
@@ -55,8 +55,8 @@ export default function Home() {
           </div>
 
           {/* Bottom white section with fixed height */}
-          <div className="bg-white text-black h-10 w-full px-8 flex items-center relative z-10">
-            <div className="ml-0 z-50 relative bg-white bg-opacity-80 p-1 md:p-0 md:bg-transparent">FOUNDER DNA.</div>
+          <div className="bg-[#F2F2F2] text-black h-10 w-full px-8 flex items-center relative z-10">
+            <div className="ml-0 z-50 relative bg-[#F2F2F2] bg-opacity-80 p-1 md:p-0 md:bg-transparent">FOUNDER DNA.</div>
           </div>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function Home() {
       <section className="bg-black text-white min-h-screen w-full pt-[calc(4rem+100px)] pb-[calc(4rem+100px)] px-6 md:px-12">
         {/* Philosophy Text Box - unified design */}
         <div className="max-w-7xl mx-auto relative mb-20">
-          <div className="bg-white text-black p-8 mx-[5%] lg:mx-0">
+          <div className="bg-[#F2F2F2] text-black p-8 mx-[5%] lg:mx-0">
             <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-6xl mx-auto">
               <p className="text-sm md:text-base tracking-tight leading-tight max-w-lg">
                 I CREATE PRODUCTS WITH THE ESSENCE I WANT TO COMMUNICATE IN MIND. NOT ALL THAT DIFFERENT FROM THE GENETIC
@@ -108,7 +108,7 @@ export default function Home() {
       <IdeaMazeSection />
 
       {/* White Section with Project Images */}
-      <section id="project-images" className="bg-white text-black pt-40 pb-60 px-6 md:px-12 overflow-hidden">
+      <section id="project-images" className="bg-[#F2F2F2] text-black pt-40 pb-60 px-6 md:px-12 overflow-hidden">
         <div className="w-full max-w-7xl mx-auto">
           <div className="flex justify-center items-center w-full overflow-visible" style={{ marginLeft: '-20px' }}>
             {/* Rev0 DevOps Image */}
@@ -294,7 +294,7 @@ export default function Home() {
       </section>
 
       {/* Essays Section */}
-      <section id="essays" className="bg-white text-black py-8 px-4 md:px-8">
+      <section id="essays" className="bg-[#F2F2F2] text-black py-16 px-4 md:px-8">
         <div className="max-w-5xl mx-auto pt-16">
           {/* Section heading */}
           <h2 className="text-2xl font-bold mb-8">ESSAYS</h2>
@@ -363,7 +363,7 @@ export default function Home() {
             <div className="flex justify-start">
               <a 
                 href="mailto:kazi@thred.ai" 
-                className="inline-block bg-white text-black px-4 py-2 text-xs font-bold hover:bg-opacity-90 transition-all duration-200 tracking-wide"
+                className="inline-block bg-[#F2F2F2] text-black px-4 py-2 text-xs font-bold hover:bg-opacity-90 transition-all duration-200 tracking-wide"
               >
                 GRAB COFFEE
               </a>

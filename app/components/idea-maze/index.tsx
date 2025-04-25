@@ -367,7 +367,7 @@ const ProjectCard = ({
       zIndex: isExpanded ? 50 : position.zIndex,
       width: position.width,
       height: position.height,
-      background: isMobile ? "rgba(255, 255, 255, 0.15)" : "rgba(255, 255, 255, 0.1)",
+      background: isMobile ? "rgba(242, 242, 242, 0.15)" : "rgba(242, 242, 242, 0.1)",
       transformOrigin: `${originX} ${originY}`
     }
   }
@@ -401,7 +401,7 @@ const ProjectCard = ({
   return (
     <motion.div
       className={`absolute rounded-none backdrop-blur-sm transition-all duration-300 overflow-hidden shadow-lg border ${
-        isMobile ? "border-white/20" : "border-white/10"
+        isMobile ? "border-[#F2F2F2]/20" : "border-[#F2F2F2]/10"
       }`}
       style={getCardStyles()}
       initial={{ opacity: 0.5 }}
@@ -420,8 +420,8 @@ const ProjectCard = ({
       <div className="relative w-full h-full">
         {/* Index number overlay */}
         <div
-          className={`absolute top-1 right-1 bg-black/70 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full ${
-            isMobile ? "border border-white/30" : ""
+          className={`absolute top-1 right-1 bg-black/70 text-[#F2F2F2] text-xs w-5 h-5 flex items-center justify-center rounded-full ${
+            isMobile ? "border border-[#F2F2F2]/30" : ""
           }`}
         >
           {index + 1}
@@ -437,7 +437,7 @@ const ProjectCard = ({
         }}
         transition={{ duration: isMobile ? 0.2 : 0.3 }} // Faster transition for mobile
       >
-        <h3 className={`font-medium text-white truncate ${isMobile ? "text-xs" : "text-sm"}`}>{project.title}</h3>
+        <h3 className={`font-medium text-[#F2F2F2] truncate ${isMobile ? "text-xs" : "text-sm"}`}>{project.title}</h3>
         <motion.div
           initial={{ height: 0, opacity: 0 }}
           animate={{
@@ -447,12 +447,12 @@ const ProjectCard = ({
           transition={{ duration: isMobile ? 0.2 : 0.3 }} // Faster transition for mobile
           className="overflow-hidden"
         >
-          <p className="text-[10px] md:text-xs text-gray-200 mt-1">{project.description}</p>
-          <p className="text-[10px] md:text-xs text-gray-300 mt-1">Year: {project.year}</p>
+          <p className="text-[10px] md:text-xs text-[#F2F2F2]/80 mt-1">{project.description}</p>
+          <p className="text-[10px] md:text-xs text-[#F2F2F2]/60 mt-1">Year: {project.year}</p>
           {project.postmortem && (
             <div className="mt-2 p-2 bg-black/30 rounded">
-              <p className="text-[10px] md:text-xs font-semibold text-red-300">Postmortem:</p>
-              <p className="text-[10px] md:text-xs text-gray-200">{project.postmortem}</p>
+              <p className="text-[10px] md:text-xs font-semibold text-[#F2F2F2]/50">Postmortem:</p>
+              <p className="text-[10px] md:text-xs text-[#F2F2F2]/80">{project.postmortem}</p>
             </div>
           )}
           
@@ -461,13 +461,13 @@ const ProjectCard = ({
             <div className="flex justify-between mt-3">
               <button 
                 onClick={handleNavigatePrev}
-                className="bg-black/50 text-white/80 rounded-full w-8 h-8 flex items-center justify-center border border-white/20 hover:bg-black/70"
+                className="bg-black/50 text-[#F2F2F2]/80 rounded-full w-8 h-8 flex items-center justify-center border border-[#F2F2F2]/20 hover:bg-black/70"
               >
                 ←
               </button>
               <button 
                 onClick={handleNavigateNext}
-                className="bg-black/50 text-white/80 rounded-full w-8 h-8 flex items-center justify-center border border-white/20 hover:bg-black/70"
+                className="bg-black/50 text-[#F2F2F2]/80 rounded-full w-8 h-8 flex items-center justify-center border border-[#F2F2F2]/20 hover:bg-black/70"
               >
                 →
               </button>
@@ -546,7 +546,7 @@ export default function IdeaMaze() {
       <div className="max-w-7xl mx-auto">
         {/* Title Box for Idea Maze */}
         <div className="w-full max-w-3xl mx-auto mb-8">
-          <div className="bg-black rounded-none p-8 text-white font-inter text-center shadow-lg border border-white/10">
+          <div className="bg-black rounded-none p-8 text-[#F2F2F2] font-inter text-center shadow-lg border border-[#F2F2F2]/10">
             <p className="text-sm md:text-base tracking-tight leading-tight">
               The winding path of insights, pivots, and lessons that lead to breakthrough products. Here, I share the frameworks, mental models, and hard-won lessons that shape my approach to building and scaling B2B SaaS.
             </p>
@@ -554,7 +554,7 @@ export default function IdeaMaze() {
         </div>
         <div
           ref={containerRef}
-          className="relative w-full bg-black rounded-none border border-white/10"
+          className="relative w-full bg-black rounded-none border border-[#F2F2F2]/10"
           style={{
             height: isMobile ? `${mobileContainerHeight}px` : "800px",
             overflowY: isMobile ? "auto" : "hidden",
@@ -595,7 +595,7 @@ export default function IdeaMaze() {
                     y1={y1}
                     x2={x2}
                     y2={y2}
-                    stroke={`rgba(255, 255, 255, ${strokeOpacity})`}
+                    stroke={`rgba(242, 242, 242, ${strokeOpacity})`}
                     strokeWidth={strokeWidth}
                     strokeDasharray={isMobile ? "5 3" : "4 4"}
                   />
@@ -604,7 +604,7 @@ export default function IdeaMaze() {
                   <polygon
                     points={`${x2},${y2} ${x2 - 5},${y2 - 3} ${x2 - 5},${y2 + 3}`}
                     transform={`rotate(${(Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI}, ${x2}, ${y2})`}
-                    fill={`rgba(255, 255, 255, ${isMobile ? "0.5" : "0.4"})`}
+                    fill={`rgba(242, 242, 242, ${isMobile ? "0.5" : "0.4"})`}
                   />
                 </g>
               )
@@ -633,12 +633,12 @@ export default function IdeaMaze() {
 
           {/* Glow effects */}
           <div
-            className={`absolute inset-0 bg-gradient-radial from-purple-500/10 to-transparent opacity-${isMobile ? "40" : "30"} pointer-events-none`}
+            className={`absolute inset-0 bg-gradient-radial from-[#F2F2F2]/10 to-transparent opacity-${isMobile ? "40" : "30"} pointer-events-none`}
           ></div>
 
           {/* Mobile instructions */}
           {isMobile && (
-            <div className="absolute bottom-2 left-0 right-0 text-center text-xs text-white/60 pointer-events-none">
+            <div className="absolute bottom-2 left-0 right-0 text-center text-xs text-[#F2F2F2]/60 pointer-events-none">
               Pick a card. Any card.
             </div>
           )}
