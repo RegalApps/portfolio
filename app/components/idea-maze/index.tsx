@@ -9,144 +9,144 @@ import { useMediaQuery } from "./hooks/use-mobile"
 const projects = [
   {
     id: "1",
-    title: "Design System",
-    description: "A comprehensive design system for web applications",
-    year: 2023,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Ecom-design mobile",
+    description: "An easy mobile app for designing, posting, and buying merchandise print-on-demand.",
+    postmortem: "Wasn't profitable, and buyers stopped buying when interest rates exploded.",
+    year: 2020,
   },
   {
     id: "2",
-    title: "Mobile App",
-    description: "Cross-platform mobile application for productivity",
-    year: 2022,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Online Store Platform",
+    description: "Shopify competitor that connected to your Thred mobile app and provided a white-label online store.",
+    postmortem: "Wasn't profitable, and buyers stopped buying when interest rates exploded. Not differentiated enough from Shopify.",
+    year: 2020,
   },
   {
     id: "3",
-    title: "Brand Identity",
-    description: "Complete rebrand for a tech startup",
+    title: "NFT BigCommerce App",
+    description: "A BigCommerce App for selling NFTs on BigCommerce.",
+    postmortem: "Not enough enterprise value for BigCommerce's enterprise customers.",
     year: 2021,
-    imageSrc: "/placeholder.svg?height=300&width=300",
   },
   {
     id: "4",
-    title: "E-commerce Platform",
-    description: "Online shopping experience with modern UI",
-    year: 2023,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "On-Chain Data Platform",
+    description: "A nft token that follows users around their journey in web3 that they can monetize and sell to brands permissionlessly from a pool of contracts.",
+    postmortem: "Would have needed a sufficiently large pool of consumer users to make it worthwhile to collect contract fees on. Too early.",
+    year: 2021,
   },
   {
     id: "5",
-    title: "Data Visualization",
-    description: "Interactive dashboard for complex data sets",
+    title: "Web3 Wallet & Appstore",
+    description: "Design & Build your own custom wallet.",
+    postmortem: "Started growing a personal brand on Farcaster to capture some demand. Went on a lot of customer interviews, but developers were happy to just build their bespoke wallets rather than use our platform. Monetization was unclear.",
     year: 2022,
-    imageSrc: "/placeholder.svg?height=300&width=300",
   },
   {
     id: "6",
-    title: "AR Experience",
-    description: "Augmented reality project for retail",
-    year: 2021,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Vertical AI",
+    description: "AI Workflow IDE in the browser.",
+    postmortem: "Too early, AI workflows were still experimental at the time.",
+    year: 2022,
   },
   {
     id: "7",
-    title: "Podcast Platform",
-    description: "Audio streaming service with personalized recommendations",
-    year: 2023,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Unfathom",
+    description: "AI 3D World Generator and editor in the browser.",
+    postmortem: "Not high fidelity enough to be used in non-gaming scenarios, and gaming-tooling market is hard to sell tech like this to.",
+    year: 2022,
   },
   {
     id: "8",
-    title: "Smart Home App",
-    description: "IoT control interface for connected homes",
-    year: 2022,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Dev Messaging (Linear for Slack)",
+    description: "Messaging platform for developers - fast, sleek like Linear.",
+    postmortem: "Not differentiated enough, insanely high switching cost from Slack.",
+    year: 2023,
   },
   {
     id: "9",
-    title: "Fitness Tracker",
-    description: "Health monitoring application with social features",
-    year: 2021,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Thred Developer Workspace",
+    description: "Developer Workspace Platform that aggregated everything you need to do.",
+    postmortem: "Not useful according to Scale AI Eng Lead - Linear can handle most of what is done here.",
+    year: 2023,
   },
   {
     id: "10",
-    title: "Travel Planner",
-    description: "Itinerary builder with local recommendations",
+    title: "Loom for Customer Support",
+    description: "Video-based Bug Reporting for Customers (Loom for Customer Support).",
+    postmortem: "Too niche and incredibly small market.",
     year: 2023,
-    imageSrc: "/placeholder.svg?height=300&width=300",
   },
   {
     id: "11",
-    title: "Recipe App",
-    description: "Culinary inspiration with step-by-step instructions",
-    year: 2022,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "User Management for Banking",
+    description: "All-in-one User Identity platform for finance apps - Auth + Identity in one.",
+    postmortem: "Combining Auth + Identity is great for NEW applications, the only problem being new fintech applications are at an all-time-low.",
+    year: 2023,
   },
   {
     id: "12",
-    title: "Learning Platform",
-    description: "Educational content with interactive exercises",
-    year: 2021,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Milestone-based Payments",
+    description: "Easy milestone-based payments in the browser. PayPal for Milestone-based payments.",
+    postmortem: "People prefer to use Deel since it contains the payments and the compliance. For B2B Payments, Slope covers this.",
+    year: 2024,
   },
   {
     id: "13",
-    title: "Weather App",
-    description: "Hyperlocal forecasts with beautiful visualizations",
-    year: 2023,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Incentive Compensation Platform",
+    description: "Easy sales commission planning and automation platform in the browser.",
+    postmortem: "Salesforce offers this natively, and not enough of a pain point anymore (hard to differentiate).",
+    year: 2025,
   },
   {
     id: "14",
-    title: "Music Streaming",
-    description: "Audio platform with artist discovery features",
-    year: 2022,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Dynamic Custom Enterprise Plan API",
+    description: "Ride on the decoupling of features trend. Allow for dynamic sales agreements that can be connected to product level changes. Power the custom plans button.",
+    postmortem: "Not enough demand. Custom plans are generally the same +-1 feature. Not painful enough to require a dedicated service.",
+    year: 2025,
   },
   {
     id: "15",
-    title: "Task Manager",
-    description: "Productivity tool with team collaboration",
-    year: 2021,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Enterprise Video Search",
+    description: "Glean for video. Sync your video content from meetings and search across them.",
+    postmortem: "Great, new technology – but too broad and not useful enough for meetings (why can't I just search the transcript?)",
+    year: 2025,
   },
   {
     id: "16",
-    title: "Social Network",
-    description: "Community platform for niche interests",
-    year: 2023,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Enterprise Multi Modal Search API",
+    description: "Integrate multi-modal content search in your app.",
+    postmortem: "Devs only wanted our underlying 12labs infra. Our MM search was not critical. We weren't going to beat the industry experts on Video search alone. We had no edge.",
+    year: 2025,
   },
   {
     id: "17",
-    title: "Photo Editor",
-    description: "Creative tools for image manipulation",
-    year: 2022,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "On-Meeting Knowledge Search",
+    description: "Document-based Platform that surfaces insights live on your meeting.",
+    postmortem: "Great for tasks like nailing an interview, not so much for in-workplace use (I can memorize meeting info beforehand).",
+    year: 2025,
   },
   {
     id: "18",
-    title: "News Aggregator",
-    description: "Personalized content from diverse sources",
-    year: 2021,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "AI Parallel Dialer",
+    description: "Parallel & Power Dialer for Sales Teams. AI-enhanced (outbound calling with AI).",
+    postmortem: "Not differentiated enough from Nooks and Orum, and any innovation on the AI Outbound Calling front is curbed by new FCC laws.",
+    year: 2025,
   },
   {
     id: "19",
-    title: "Video Platform",
-    description: "Content sharing with creator monetization",
-    year: 2023,
-    imageSrc: "/placeholder.svg?height=300&width=300",
+    title: "Datadog for GTM",
+    description: "Connect all your customer GTM touchpoints (email, meetings, slack) and have a unified view on what's happening in your GTM (competitor to Gong Data Platform).",
+    postmortem: "Paused",
+    year: 2025,
   },
   {
     id: "20",
-    title: "Finance Tracker",
-    description: "Personal budgeting with investment insights",
-    year: 2022,
-    imageSrc: "/placeholder.svg?height=300&width=300",
-  },
+    title: "Customer Migration Platform (CMP)",
+    description: "An easy SDK that helps your customers migrate their data to your platform during sign up. Provides easy-to-use connectors for you to set up and lower the switching cost.",
+    postmortem: "Mooning",
+    year: 2025,
+  }
 ]
 
 // Types for positions
@@ -282,65 +282,142 @@ interface ProjectCardProps {
     id: string
     title: string
     description: string
+    postmortem: string
     year: number
-    imageSrc: string
   }
   position: Position
   index: number
   isMobile: boolean
+  containerWidth: number
+  containerHeight: number
+  activeCardIndex: number | null
+  setActiveCardIndex: (index: number | null) => void
+  totalCards: number
+  navigateToCard: (index: number) => void
 }
 
-const ProjectCard = ({ project, position, index, isMobile }: ProjectCardProps) => {
+const ProjectCard = ({
+  project,
+  position,
+  index,
+  isMobile,
+  containerWidth,
+  containerHeight,
+  activeCardIndex,
+  setActiveCardIndex,
+  totalCards,
+  navigateToCard,
+}: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false)
-  const [isTouched, setIsTouched] = useState(false)
-  const expandedSize = isMobile ? 120 : 180
+  const expandedSize = isMobile ? 320 : 240 // Larger size on mobile to take up more screen space
 
   // Determine if the card should be expanded
-  const isExpanded = isMobile ? isTouched : isHovered
+  const isExpanded = isMobile
+    ? activeCardIndex === index
+    : isHovered
+
+  // Calculate the transform origin and adjust position to prevent overflow
+  const getCardStyles = () => {
+    // Calculate center position of the card
+    const centerX = position.left + position.width / 2
+    const centerY = position.top + position.height / 2
+    
+    // Calculate relative position in the container (0-1)
+    const relativeX = centerX / containerWidth
+    const relativeY = centerY / containerHeight
+    
+    // Determine transform origin
+    let originX = '50%'
+    if (relativeX > 0.67) originX = '100%'
+    else if (relativeX < 0.33) originX = '0%'
+    
+    let originY = '50%'
+    if (relativeY > 0.67) originY = '100%'
+    else if (relativeY < 0.33) originY = '0%'
+    
+    // Calculate position adjustments to prevent overflow
+    let adjustedLeft = position.left
+    let adjustedTop = position.top
+    
+    // If expanded on mobile, center the card on screen
+    if (isExpanded && isMobile) {
+      // Calculate the center position of the container
+      const containerCenterX = containerWidth / 2
+      const containerCenterY = containerHeight / 2
+      
+      // Position the card in the center of the screen
+      adjustedLeft = containerCenterX - (expandedSize / 2)
+      adjustedTop = containerCenterY - (expandedSize / 2)
+      
+      // Ensure the card stays within bounds
+      adjustedLeft = Math.max(0, Math.min(adjustedLeft, containerWidth - expandedSize))
+      adjustedTop = Math.max(0, Math.min(adjustedTop, containerHeight - expandedSize))
+    } 
+    // For desktop or non-expanded cards, use the original positioning logic
+    else if (isExpanded) {
+      adjustedLeft = Math.min(adjustedLeft, containerWidth - expandedSize)
+      adjustedTop = Math.min(adjustedTop, containerHeight - expandedSize)
+      adjustedLeft = Math.max(0, adjustedLeft)
+      adjustedTop = Math.max(0, adjustedTop)
+    }
+    
+    return {
+      top: adjustedTop,
+      left: adjustedLeft,
+      zIndex: isExpanded ? 50 : position.zIndex,
+      width: position.width,
+      height: position.height,
+      background: isMobile ? "rgba(255, 255, 255, 0.15)" : "rgba(255, 255, 255, 0.1)",
+      transformOrigin: `${originX} ${originY}`
+    }
+  }
+
+  // Handle navigation to next/previous card
+  const handleNavigateNext = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    const nextIndex = (index + 1) % totalCards
+    navigateToCard(nextIndex)
+  }
+
+  const handleNavigatePrev = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    const prevIndex = (index - 1 + totalCards) % totalCards
+    navigateToCard(prevIndex)
+  }
+
+  // Handle card tap
+  const handleCardTap = () => {
+    if (isMobile) {
+      if (activeCardIndex === index) {
+        // If this card is already active, do nothing (will be handled by outside click)
+        return
+      } else {
+        // Set this card as active
+        setActiveCardIndex(index)
+      }
+    }
+  }
 
   return (
     <motion.div
       className={`absolute rounded-none backdrop-blur-sm transition-all duration-300 overflow-hidden shadow-lg border ${
         isMobile ? "border-white/20" : "border-white/10"
       }`}
-      style={{
-        top: position.top,
-        left: position.left,
-        zIndex: isExpanded ? 50 : position.zIndex,
-        width: position.width,
-        height: position.height,
-        background: isMobile ? "rgba(255, 255, 255, 0.15)" : "rgba(255, 255, 255, 0.1)",
-      }}
+      style={getCardStyles()}
       initial={{ opacity: 0.5 }}
       animate={{
         opacity: isExpanded ? 1 : isMobile ? 0.8 : 0.7,
-        scale: isExpanded ? (isMobile ? 1.5 : 1.8) : 1,
+        scale: 1,
         width: isExpanded ? expandedSize : position.width,
         height: isExpanded ? expandedSize : position.height,
       }}
       transition={{ duration: isMobile ? 0.2 : 0.3 }} // Faster transition for mobile
       onHoverStart={() => !isMobile && setIsHovered(true)}
       onHoverEnd={() => !isMobile && setIsHovered(false)}
-      onTouchStart={() => isMobile && setIsTouched(true)}
-      onTouchEnd={() => isMobile && setIsTouched(false)}
-      onTouchCancel={() => isMobile && setIsTouched(false)} // Handle touch cancel events too
+      onClick={handleCardTap}
       data-index={index}
     >
       <div className="relative w-full h-full">
-        <Image
-          src={project.imageSrc || "/placeholder.svg"}
-          alt={project.title}
-          fill
-          className={`object-cover transition-all duration-500 ${
-            isExpanded ? "filter-none" : "filter blur-[1px] brightness-75"
-          }`}
-        />
-        <div
-          className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${
-            isExpanded ? "opacity-0" : "opacity-100"
-          }`}
-        />
-
         {/* Index number overlay */}
         <div
           className={`absolute top-1 right-1 bg-black/70 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full ${
@@ -370,8 +447,32 @@ const ProjectCard = ({ project, position, index, isMobile }: ProjectCardProps) =
           transition={{ duration: isMobile ? 0.2 : 0.3 }} // Faster transition for mobile
           className="overflow-hidden"
         >
-          <p className="text-xs text-gray-200 mt-1 line-clamp-3">{project.description}</p>
-          <p className="text-xs text-gray-300 mt-1">{project.year}</p>
+          <p className="text-[10px] md:text-xs text-gray-200 mt-1">{project.description}</p>
+          <p className="text-[10px] md:text-xs text-gray-300 mt-1">Year: {project.year}</p>
+          {project.postmortem && (
+            <div className="mt-2 p-2 bg-black/30 rounded">
+              <p className="text-[10px] md:text-xs font-semibold text-red-300">Postmortem:</p>
+              <p className="text-[10px] md:text-xs text-gray-200">{project.postmortem}</p>
+            </div>
+          )}
+          
+          {/* Navigation arrows for mobile only */}
+          {isExpanded && isMobile && (
+            <div className="flex justify-between mt-3">
+              <button 
+                onClick={handleNavigatePrev}
+                className="bg-black/50 text-white/80 rounded-full w-8 h-8 flex items-center justify-center border border-white/20 hover:bg-black/70"
+              >
+                ←
+              </button>
+              <button 
+                onClick={handleNavigateNext}
+                className="bg-black/50 text-white/80 rounded-full w-8 h-8 flex items-center justify-center border border-white/20 hover:bg-black/70"
+              >
+                →
+              </button>
+            </div>
+          )}
         </motion.div>
       </motion.div>
     </motion.div>
@@ -383,9 +484,37 @@ export default function IdeaMaze() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [positions, setPositions] = useState<Position[]>([])
   const [connections, setConnections] = useState<Connection[]>([])
-  const [containerSize, setContainerSize] = useState({ width: 1000, height: 800 })
+  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 })
+  const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null)
 
-  // Update container size on resize
+  // Function to handle navigation between cards
+  const navigateToCard = (index: number) => {
+    setActiveCardIndex(index)
+  }
+
+  // Handle clicks outside of cards to close the active card
+  const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isMobile && activeCardIndex !== null) {
+      // Check if the click was on a card
+      const target = e.target as HTMLElement
+      const isCardClick = target.closest('[data-index]')
+
+      // If not clicking on a card, close the active card
+      if (!isCardClick) {
+        setActiveCardIndex(null)
+      }
+    }
+  }
+
+  const updateSize = () => {
+    if (containerRef.current) {
+      setContainerSize({
+        width: containerRef.current.offsetWidth,
+        height: containerRef.current.offsetHeight,
+      })
+    }
+  }
+
   useEffect(() => {
     const updateSize = () => {
       if (containerRef.current) {
@@ -407,11 +536,10 @@ export default function IdeaMaze() {
     setConnections(generateSequentialConnections(projects.length))
   }, [containerSize, isMobile])
 
-  // Calculate container height for mobile
-  const mobileContainerHeight = isMobile
-    ? Math.ceil(projects.length / 2) * 100 + 100
-    : // Estimate height based on number of projects
-      800
+  // Dynamically calculate container height for mobile based on positioned cards
+  const mobileContainerHeight = isMobile && positions.length
+    ? Math.max(...positions.map(p => p.top + p.height)) + 80 // add padding
+    : 800
 
   return (
     <div className="w-full py-12 px-4 md:px-6">
@@ -432,7 +560,16 @@ export default function IdeaMaze() {
             overflowY: isMobile ? "auto" : "hidden",
             overflowX: "hidden",
           }}
+          onClick={handleOutsideClick}
         >
+          {/* Semi-transparent overlay when a card is active on mobile */}
+          {isMobile && activeCardIndex !== null && (
+            <div 
+              className="absolute inset-0 bg-black/70 z-40 pointer-events-none"
+              style={{ transition: "opacity 0.3s ease" }}
+            />
+          )}
+
           {/* SVG for connections */}
           <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
             {connections.map((connection, idx) => {
@@ -484,6 +621,12 @@ export default function IdeaMaze() {
                   position={positions[index]}
                   index={index}
                   isMobile={isMobile}
+                  containerWidth={containerSize.width}
+                  containerHeight={containerSize.height}
+                  activeCardIndex={activeCardIndex}
+                  setActiveCardIndex={setActiveCardIndex}
+                  totalCards={projects.length}
+                  navigateToCard={(index: number) => navigateToCard(index)}
                 />
               ),
           )}
@@ -496,7 +639,7 @@ export default function IdeaMaze() {
           {/* Mobile instructions */}
           {isMobile && (
             <div className="absolute bottom-2 left-0 right-0 text-center text-xs text-white/60 pointer-events-none">
-              Press and hold to peek at details
+              Pick a card. Any card.
             </div>
           )}
         </div>
