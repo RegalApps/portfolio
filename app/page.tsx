@@ -182,7 +182,7 @@ export default function Home() {
           </div>
 
           {/* Mobile view - vertical stacked layout */}
-          <div className="flex flex-col space-y-12 md:hidden -mt-20">
+          <div className="flex flex-col space-y-12 md:hidden">
             {/* Rev0 Campaign Image - First */}
             <div className="relative w-full h-[350px] mx-auto">
               <Image
