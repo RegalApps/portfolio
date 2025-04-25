@@ -64,7 +64,7 @@ export default function Home() {
       {/* Terminal-style Portfolio Section */}
       <section className="bg-black text-white min-h-screen w-full pt-[calc(4rem+100px)] pb-[calc(4rem+100px)] px-6 md:px-12">
         {/* Philosophy Text Box - unified design */}
-        <div className="max-w-7xl mx-auto relative mb-20">
+        <div className="max-w-7xl mx-auto relative mb-20 md:mt-0 mt-[-25px]">
           <div className="bg-[#F2F2F2] text-black p-8 mx-[5%] lg:mx-0">
             <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-6xl mx-auto">
               <p className="text-sm md:text-base tracking-tight leading-tight max-w-lg">
