@@ -26,8 +26,8 @@ export default function Home() {
           {/* Top white section with fixed height - made thinner to match bottom white section */}
           <div className="bg-[#F2F2F2] text-black h-10 w-full px-[69px] relative z-10">
             {/* Corner text elements with font styling matching "founder DNA" */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-4 text-black text-base z-30 hidden md:block">DOMINATE</div>
-            <div className="absolute top-1/2 -translate-y-1/2 left-4 text-black text-base z-30 hidden md:block">RELENTLESS</div>
+            <div className="absolute top-1/2 -translate-y-1/2 right-4 text-black text-xs md:text-base z-30">DOMINATE</div>
+            <div className="absolute top-1/2 -translate-y-1/2 left-4 text-black text-xs md:text-base z-30">RELENTLESS</div>
           </div>
 
           {/* Middle black section with flex-grow to adapt length */}
@@ -110,7 +110,8 @@ export default function Home() {
       {/* White Section with Project Images */}
       <section id="project-images" className="bg-[#F2F2F2] text-black pt-40 pb-60 px-6 md:px-12 overflow-hidden">
         <div className="w-full max-w-7xl mx-auto">
-          <div className="flex justify-center items-center w-full overflow-visible" style={{ marginLeft: '-20px' }}>
+          {/* Desktop view - original layout */}
+          <div className="hidden md:flex justify-center items-center w-full overflow-visible" style={{ marginLeft: '-20px' }}>
             {/* Rev0 DevOps Image */}
             <div 
               className="relative"
@@ -177,6 +178,42 @@ export default function Home() {
                   priority
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Mobile view - vertical stacked layout */}
+          <div className="flex flex-col space-y-12 md:hidden -mt-20">
+            {/* Rev0 Campaign Image - First */}
+            <div className="relative w-full h-[350px] mx-auto">
+              <Image
+                src="/screenshots/rev0-campaign.png"
+                alt="Rev0 Campaign"
+                fill
+                className="object-contain border-4 border-black shadow-xl"
+                priority
+              />
+            </div>
+
+            {/* Rev0 DevOps Image - Second */}
+            <div className="relative w-full h-[350px] mx-auto">
+              <Image
+                src="/screenshots/rev0-devops.png"
+                alt="Rev0 DevOps"
+                fill
+                className="object-contain border-4 border-black shadow-xl"
+                priority
+              />
+            </div>
+
+            {/* Rev0 Sales Image - Third */}
+            <div className="relative w-full h-[350px] mx-auto">
+              <Image
+                src="/screenshots/rev0-sales.png"
+                alt="Rev0 Sales"
+                fill
+                className="object-contain border-4 border-black shadow-xl"
+                priority
+              />
             </div>
           </div>
         </div>
