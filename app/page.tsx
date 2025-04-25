@@ -409,6 +409,77 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Social Media Icons Section */}
+      <section className="bg-black text-white py-12 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex justify-center items-center space-x-8">
+            {/* LinkedIn */}
+            <a 
+              href="https://www.linkedin.com/in/kazihossain1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-110"
+            >
+              <Image 
+                src="/images/linkedin_icon.png" 
+                alt="LinkedIn" 
+                width={40} 
+                height={40} 
+                className="object-contain"
+              />
+            </a>
+            
+            {/* Farcaster */}
+            <a 
+              href="https://warpcast.com/kazi" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-110"
+            >
+              <Image 
+                src="/images/farcaster_icon.png" 
+                alt="Farcaster" 
+                width={40} 
+                height={40} 
+                className="object-contain"
+              />
+            </a>
+            
+            {/* Twitter */}
+            <a 
+              href="https://twitter.com/wolfofbaystreet" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-110"
+            >
+              <Image 
+                src="/images/twitter_icon.png" 
+                alt="Twitter" 
+                width={40} 
+                height={40} 
+                className="object-contain"
+              />
+            </a>
+            
+            {/* Instagram */}
+            <a 
+              href="https://instagram.com/realestkazi/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-110"
+            >
+              <Image 
+                src="/images/ig_icon.png" 
+                alt="Instagram" 
+                width={40} 
+                height={40} 
+                className="object-contain"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Add the CSS for the hover underline animation and custom cursor */}
       <style jsx global>{`
         .hover-underline-animation {
