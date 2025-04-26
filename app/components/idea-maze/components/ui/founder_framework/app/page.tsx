@@ -415,7 +415,8 @@ function StageBadge({ stage }: { stage: FrameworkStage }) {
           variant="outline"
           className="bg-yellow-800 text-yellow-100 border-yellow-200 font-normal rounded-sm px-1.5 py-0 h-4 text-[10px] uppercase dark:bg-yellow-200 dark:text-yellow-900 dark:border-yellow-700"
         >
-          Problem Discovery
+          <span className="sm:hidden">Discovery</span>
+          <span className="hidden sm:inline">Problem Discovery</span>
         </Badge>
       )
     case "customer-validation":
@@ -424,7 +425,8 @@ function StageBadge({ stage }: { stage: FrameworkStage }) {
           variant="outline"
           className="bg-teal-800 text-teal-100 border-teal-200 font-normal rounded-sm px-1.5 py-0 h-4 text-[10px] uppercase dark:bg-teal-200 dark:text-teal-900 dark:border-teal-700"
         >
-          Customer Validation
+          <span className="sm:hidden">Validation</span>
+          <span className="hidden sm:inline">Customer Validation</span>
         </Badge>
       )
     case "market-signals":
@@ -433,7 +435,8 @@ function StageBadge({ stage }: { stage: FrameworkStage }) {
           variant="outline"
           className="bg-green-800 text-green-100 border-green-200 font-normal rounded-sm px-1.5 py-0 h-4 text-[10px] uppercase dark:bg-green-200 dark:text-green-900 dark:border-green-700"
         >
-          Market Signals
+          <span className="sm:hidden">Signal</span>
+          <span className="hidden sm:inline">Market Signals</span>
         </Badge>
       )
     case "minimum-experiments":
@@ -442,7 +445,8 @@ function StageBadge({ stage }: { stage: FrameworkStage }) {
           variant="outline"
           className="bg-purple-800 text-purple-100 border-purple-200 font-normal rounded-sm px-1.5 py-0 h-4 text-[10px] uppercase dark:bg-purple-200 dark:text-purple-900 dark:border-purple-700"
         >
-          Minimum Experiments
+          <span className="sm:hidden">Experiment</span>
+          <span className="hidden sm:inline">Minimum Experiments</span>
         </Badge>
       )
     case "rapid-iteration":
@@ -451,7 +455,8 @@ function StageBadge({ stage }: { stage: FrameworkStage }) {
           variant="outline"
           className="bg-red-800 text-red-100 border-red-200 font-normal rounded-sm px-1.5 py-0 h-4 text-[10px] uppercase dark:bg-red-200 dark:text-red-900 dark:border-red-700"
         >
-          Rapid Iteration
+          <span className="sm:hidden">Iteration</span>
+          <span className="hidden sm:inline">Rapid Iteration</span>
         </Badge>
       )
   }

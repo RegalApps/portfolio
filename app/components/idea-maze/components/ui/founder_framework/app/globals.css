@@ -165,8 +165,8 @@
   }
 
   .metallic-card.active {
-    background-color: hsl(var(--terminal-accent-bg));
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+    /* add subtle inner shadow for clicked/expanded state */
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
     transform: translateY(0) translateZ(0);
     z-index: 10;
   }
