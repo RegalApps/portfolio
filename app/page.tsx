@@ -3,6 +3,7 @@
 import IdeaMazeSection from "./components/idea-maze"
 import Image from 'next/image'
 import Link from 'next/link'
+import FounderFramework from './components/idea-maze/components/ui/founder_framework/app/page';
 
 export default function Home() {
   return (
@@ -218,6 +219,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Founder Framework Section */}
+      <FounderFramework />
 
       {/* Founder Interviews Section */}
       <section id="videos" className="bg-black text-white py-24 pb-32">

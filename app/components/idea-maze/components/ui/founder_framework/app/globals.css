@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+
+    /* Terminal theme colors - light mode updated to match the image */
+    --terminal-bg: 0 0% 100%;
+    --terminal-fg: 0 0% 0%;
+    --terminal-header-bg: 0 0% 85%;
+    --terminal-header-fg: 0 0% 0%;
+    --terminal-border: 0 0% 90%;
+    --terminal-input-bg: 0 0% 98%;
+    --terminal-input-border: 0 0% 85%;
+    --terminal-muted: 0 0% 65%;
+    --terminal-accent-bg: 0 0% 96%;
+
+    /* Metallic button styles */
+    --metallic-light: 0 0% 98%;
+    --metallic-mid: 0 0% 92%;
+    --metallic-dark: 0 0% 85%;
+    --metallic-border: 0 0% 80%;
+    --metallic-shadow: 0 0% 0%;
+    --metallic-highlight: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    /* Terminal theme colors - dark mode */
+    --terminal-bg: 0 0% 10%;
+    --terminal-fg: 0 0% 70%;
+    --terminal-header-bg: 0 0% 20%;
+    --terminal-header-fg: 0 0% 70%;
+    --terminal-border: 0 0% 20%;
+    --terminal-input-bg: 0 0% 13%;
+    --terminal-input-border: 0 0% 27%;
+    --terminal-muted: 0 0% 47%;
+    --terminal-accent-bg: 0 0% 13%;
+
+    /* Custom colors for dark mode */
+    --terminal-light-text: 20 14% 94%; /* #F2F0EF */
+
+    /* Metallic button styles - dark mode */
+    --metallic-light: 0 0% 30%;
+    --metallic-mid: 0 0% 25%;
+    --metallic-dark: 0 0% 20%;
+    --metallic-border: 0 0% 35%;
+    --metallic-shadow: 0 0% 0%;
+    --metallic-highlight: 0 0% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* stylelint-disable at-rule-no-unknown */
+  @tailwind components;
+  .terminal-bg {
+    background-color: hsl(var(--terminal-bg));
+    color: hsl(var(--terminal-fg));
+  }
+
+  .terminal-header {
+    background-color: hsl(var(--terminal-header-bg));
+    color: hsl(var(--terminal-header-fg));
+  }
+
+  .terminal-border {
+    border-color: hsl(var(--terminal-border));
+  }
+
+  .terminal-input {
+    background-color: hsl(var(--terminal-input-bg));
+    border-color: hsl(var(--terminal-input-border));
+    color: hsl(var(--terminal-fg));
+  }
+
+  .terminal-muted {
+    color: hsl(var(--terminal-muted));
+  }
+
+  .terminal-accent {
+    background-color: hsl(var(--terminal-accent-bg));
+  }
+
+  .terminal-button {
+    background-color: hsl(var(--terminal-header-bg));
+    color: hsl(var(--terminal-fg));
+    border-color: hsl(var(--terminal-border));
+  }
+
+  .terminal-button:hover {
+    background-color: hsl(var(--terminal-accent-bg));
+  }
+
+  /* Metallic button styles - updated with subtle shadow effect */
+  .metallic-card {
+    background-color: white;
+    border: 1px solid hsl(var(--metallic-border));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+    border-radius: 2px;
+    position: relative;
+    transform: translateZ(0);
+  }
+
+  .dark .metallic-card {
+    background-color: hsl(var(--terminal-bg));
+    border: 1px solid hsl(var(--metallic-border));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  .metallic-card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px) translateZ(0);
+    z-index: 5;
+  }
+
+  .metallic-card.active {
+    background-color: hsl(var(--terminal-accent-bg));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+    transform: translateY(0) translateZ(0);
+    z-index: 10;
+  }
+
+  .dark .metallic-card.active {
+    background-color: hsl(var(--terminal-accent-bg));
+  }
+
+  .metallic-button {
+    background-color: white;
+    border: 1px solid hsl(var(--metallic-border));
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    border-radius: 1px;
+    position: relative;
+  }
+
+  .dark .metallic-button {
+    background-color: hsl(var(--terminal-bg));
+    border: 1px solid hsl(var(--metallic-border));
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .metallic-button:hover {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .metallic-button:active,
+  .metallic-button.active {
+    background-color: hsl(var(--terminal-accent-bg));
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    transform: translateY(0);
+  }
+
+  .dark .metallic-button:active,
+  .dark .metallic-button.active {
+    background-color: hsl(var(--terminal-accent-bg));
+  }
+
+  /* Card stacking effect - updated with proper spacing */
+  .card-stack {
+    position: relative;
+  }
+
+  .card-stack > div {
+    transition: all 0.3s ease;
+    margin-bottom: 8px; /* Added spacing between cards */
+  }
+
+  .card-stack > div:hover {
+    transform: translateY(-1px);
+    z-index: 5;
+  }
+
+  /* Payphone button effect - updated to be more subtle */
+  .payphone-button-effect {
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+
+  .dark .payphone-button-effect {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+}
