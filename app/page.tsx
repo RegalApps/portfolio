@@ -112,7 +112,7 @@ export default function Home() {
       <section id="project-images" className="bg-[#F2F2F2] text-black pt-40 pb-60 px-6 md:px-12 overflow-hidden">
         <div className="w-full max-w-7xl mx-auto">
           {/* Desktop view - original layout */}
-          <div className="hidden md:flex justify-center items-center w-full overflow-visible" style={{ marginLeft: '-20px' }}>
+          <div className="hidden md:flex justify-center items-center w-full overflow-visible" style={{ marginLeft: '-20px', marginTop: '30px' }}>
             {/* Rev0 DevOps Image */}
             <div 
               className="relative"
@@ -224,10 +224,10 @@ export default function Home() {
       <FounderFramework />
 
       {/* Founder Interviews Section */}
-      <section id="videos" className="bg-black text-white py-24 pb-32">
+      <section id="videos" className="bg-black text-white pt-16 pb-32">
         <div className="max-w-5xl mx-auto pt-16">
           {/* Section heading */}
-          <h2 className="text-2xl font-bold mb-8">FOUNDER INTERVIEWS</h2>
+          <h2 className="text-2xl font-bold mb-8 ml-4 md:ml-0">FOUNDER INTERVIEWS</h2>
 
           {/* Grid of interview cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

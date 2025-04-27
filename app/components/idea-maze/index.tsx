@@ -400,8 +400,8 @@ const ProjectCard = ({
 
   return (
     <motion.div
-      className={`absolute rounded-none backdrop-blur-sm transition-all duration-300 overflow-hidden shadow-lg border ${
-        isMobile ? "border-[#F2F2F2]/20" : "border-[#F2F2F2]/10"
+      className={`absolute rounded-none backdrop-blur-sm transition-all duration-300 overflow-hidden shadow-2xl border-2 ${
+        isMobile ? "border-[#F2F2F2]/20" : "border-[#F2F2F2]/40"
       }`}
       style={getCardStyles()}
       initial={{ opacity: 0.5 }}
@@ -595,7 +595,7 @@ export default function IdeaMaze() {
                     y1={y1}
                     x2={x2}
                     y2={y2}
-                    stroke={`rgba(242, 242, 242, ${strokeOpacity})`}
+                    stroke={`rgba(204, 204, 204, ${strokeOpacity})`}
                     strokeWidth={strokeWidth}
                     strokeDasharray={isMobile ? "5 3" : "4 4"}
                   />
@@ -604,7 +604,7 @@ export default function IdeaMaze() {
                   <polygon
                     points={`${x2},${y2} ${x2 - 5},${y2 - 3} ${x2 - 5},${y2 + 3}`}
                     transform={`rotate(${(Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI}, ${x2}, ${y2})`}
-                    fill={`rgba(242, 242, 242, ${isMobile ? "0.5" : "0.4"})`}
+                    fill={`rgba(204, 204, 204, ${isMobile ? "0.5" : "0.4"})`}
                   />
                 </g>
               )

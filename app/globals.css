@@ -18,7 +18,7 @@ body {
 
 /* Custom scrollbar styling */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 16px;
   background: rgb(64, 64, 64);
 }
 
@@ -26,7 +26,7 @@ body {
   border-radius: 0;
   border: none;
   background-clip: padding-box;
-  background: rgba(64, 64, 64, 0.8) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 200'><text x='50%' y='50%' font-size='6' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle' writing-mode='vertical-lr' letter-spacing='1' transform='rotate(180, 6, 100)'>DON'T EXPOSE TO LOW PERFORMERS</text></svg>") no-repeat center/contain;
+  background: rgba(64, 64, 64, 0.8) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 200'><text x='50%' y='50%' font-size='8' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle' writing-mode='vertical-lr' letter-spacing='1' transform='rotate(180, 6, 100)'>DON'T EXPOSE TO LOW PERFORMERS</text></svg>") no-repeat center/contain;
   min-height: 130px;
   letter-spacing: -0.02em;
 }

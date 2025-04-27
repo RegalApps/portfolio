@@ -143,19 +143,13 @@
 
   /* Metallic button styles - updated with subtle shadow effect */
   .metallic-card {
-    background-color: white;
-    border: 1px solid hsl(var(--metallic-border));
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+    background-color: #fafafa;      /* lighter grey background */
+    border: 1px solid #ccc;         /* lighter border */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease;
     border-radius: 2px;
     position: relative;
     transform: translateZ(0);
-  }
-
-  .dark .metallic-card {
-    background-color: hsl(var(--terminal-bg));
-    border: 1px solid hsl(var(--metallic-border));
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
   }
 
   .metallic-card:hover {
@@ -171,10 +165,6 @@
     z-index: 10;
   }
 
-  .dark .metallic-card.active {
-    background-color: hsl(var(--terminal-accent-bg));
-  }
-
   .metallic-button {
     background-color: white;
     border: 1px solid hsl(var(--metallic-border));
@@ -182,12 +172,6 @@
     transition: all 0.2s ease;
     border-radius: 1px;
     position: relative;
-  }
-
-  .dark .metallic-button {
-    background-color: hsl(var(--terminal-bg));
-    border: 1px solid hsl(var(--metallic-border));
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   .metallic-button:hover {
@@ -200,11 +184,6 @@
     background-color: hsl(var(--terminal-accent-bg));
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
     transform: translateY(0);
-  }
-
-  .dark .metallic-button:active,
-  .dark .metallic-button.active {
-    background-color: hsl(var(--terminal-accent-bg));
   }
 
   /* Card stacking effect - updated with proper spacing */
