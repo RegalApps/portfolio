@@ -47,7 +47,8 @@ const config: Config = {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        terminal: ['"IBM Plex Mono"', '"Fira Mono"', '"Source Code Pro"', "Consolas", '"Ubuntu Mono"', "monospace"],
+        sans: ["Inter", "sans-serif"],
+        terminal: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -60,4 +61,3 @@ const config: Config = {
 }
 
 export default config
-
