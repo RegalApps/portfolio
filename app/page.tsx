@@ -35,18 +35,40 @@ export default function Home() {
           <div className="bg-black text-white flex-grow w-full px-12 flex flex-col justify-between relative z-10">
             {/* Left-aligned text with adjusted positioning - moved up */}
             <div className="mt-8 md:mt-12 relative h-[calc(6.98rem+6.98rem+100px)] sm:h-[calc(6.98rem+6.98rem+150px)]">
-              <div className="absolute top-[20px] -left-4 text-[6.98rem] leading-none">KAZI</div>
-              <div className="absolute top-[calc(6.98rem+20px)] -left-4 text-[3rem] sm:text-[6.98rem] font-normal leading-none">
-                IS BUILDING
+              {/* Mobile view - KAZI and IS BUILDING on separate lines, centered */}
+              <div className="sm:hidden w-full flex flex-col items-center">
+                <div className="text-[6.98rem] leading-none text-center mt-[20px]">KAZI</div>
+                <div className="text-[3rem] font-normal leading-none text-center mt-4">
+                  IS BUILDING
+                </div>
+                {/* Mobile B2B logo positioning - centered */}
+                <div className="mt-8">
+                  <Image 
+                    src="/images/b2b_logo.png" 
+                    alt="B2B Logo" 
+                    width={800} 
+                    height={200} 
+                    className="w-auto h-24"
+                  />
+                </div>
               </div>
-              <div className="absolute top-[calc(6.98rem+5rem)] sm:top-[calc(6.98rem+10rem)] -left-4">
-                <Image 
-                  src="/images/b2b_logo.png" 
-                  alt="B2B Logo" 
-                  width={800} 
-                  height={200} 
-                  className="w-auto h-24 sm:h-32 md:h-40 lg:h-48 xl:h-56 2xl:h-64"
-                />
+              
+              {/* Desktop view - KAZI IS BUILDING on one line */}
+              <div className="hidden sm:block">
+                <div className="absolute top-[20px] -left-4 text-[6.98rem] leading-none">KAZI IS BUILDING</div>
+              </div>
+              
+              {/* Desktop B2B logo positioning - moved up just below KAZI IS BUILDING with smaller size */}
+              <div className="hidden sm:block absolute top-[calc(20px+6.98rem+1.5rem)] -left-4">
+                <div className="relative" style={{ width: 'calc(6.98rem * 10)' }}> {/* Smaller width for the B2B logo */}
+                  <Image 
+                    src="/images/b2b_logo.png" 
+                    alt="B2B Logo" 
+                    width={800} 
+                    height={200} 
+                    className="w-full h-auto object-left object-contain max-h-24"
+                  />
+                </div>
               </div>
             </div>
 
@@ -88,28 +110,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Main work display - optimized layout for terminal interfaces */}
-        <div className="w-full max-w-[100vw] mx-auto mt-40 flex flex-col lg:flex-row">
-          {/* Left terminal interface */}
-          <div className="bg-black lg:ml-[-5rem] xl:ml-[-8rem] relative -mt-[50px] lg:w-1/2 z-10">
-            <a href="https://sales-terminal.vercel.app/" target="_blank" rel="noopener noreferrer" className="block terminal-perspective">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cu9PclNBoGCrZwQCpERpxphiNcFggU.png"
-                alt="Terminal Interface"
-                className="w-[100%] h-auto max-w-none"
-              />
-            </a>
-          </div>
-
-          {/* Right terminal interface */}
-          <div className="bg-black lg:mr-[-5rem] xl:mr-[-8rem] relative mt-[30px] lg:mt-[100px] lg:w-1/2 z-0">
-            <a href="https://thred-sdk.vercel.app/" target="_blank" rel="noopener noreferrer" className="block thred-perspective">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LoXJAUKx14B6KnNumBZkpqFaDjuL2x.png"
-                alt="Potential Migration Issues"
-                className="w-full h-auto object-cover"
-              />
-            </a>
+        {/* Revenue Dashboard Image - Centered */}
+        <div className="w-full max-w-5xl mx-auto mt-20 mb-20 px-4">
+          <div className="flex justify-center">
+            <img
+              src="/images/agent_revenue.png"
+              alt="Agent Revenue Dashboard"
+              className="w-full max-w-4xl h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
@@ -117,120 +125,7 @@ export default function Home() {
       {/* Idea Maze Section */}
       <IdeaMazeSection />
 
-      {/* White Section with Project Images */}
-      <section id="project-images" className="bg-[#F2F2F2] text-black pt-40 pb-60 px-6 md:px-12 overflow-hidden">
-        <div className="w-full max-w-7xl mx-auto">
-          {/* Desktop view - original layout */}
-          <div className="hidden md:flex justify-center items-center w-full overflow-visible" style={{ marginLeft: '-20px', marginTop: '30px' }}>
-            {/* Rev0 DevOps Image */}
-            <div 
-              className="relative"
-              style={{
-                transform: `scale(2.3)`,
-                zIndex: 1,
-                marginLeft: '50px',
-                flex: '1 1 33.333%',
-                display: 'flex',
-                justifyContent: 'flex-end'
-              }}
-            >
-              <div className="relative aspect-video" style={{ width: '90%' }}>
-                <Image
-                  src="/screenshots/rev0-devops.png"
-                  alt="Rev0 DevOps screenshot"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Rev0 Campaign Image */}
-            <div 
-              className="relative"
-              style={{
-                transform: `scale(2.3)`,
-                zIndex: 2,
-                flex: '1 1 33.333%',
-                display: 'flex',
-                justifyContent: 'center'
-              }}
-            >
-              <div className="relative aspect-video" style={{ width: '90%' }}>
-                <Image
-                  src="/screenshots/rev0-campaign.png"
-                  alt="Rev0 Campaign screenshot"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Rev0 Sales Image */}
-            <div 
-              className="relative"
-              style={{
-                transform: `scale(2.3)`,
-                zIndex: 1,
-                marginLeft: '-50px',
-                flex: '1 1 33.333%',
-                display: 'flex',
-                justifyContent: 'flex-start'
-              }}
-            >
-              <div className="relative aspect-video" style={{ width: '90%' }}>
-                <Image
-                  src="/screenshots/rev0-sales.png"
-                  alt="Rev0 Sales screenshot"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile view - vertical stacked layout */}
-          <div className="flex flex-col space-y-12 md:hidden">
-            {/* Rev0 Campaign Image - First */}
-            <div className="relative w-full h-[350px] mx-auto">
-              <Image
-                src="/screenshots/rev0-campaign.png"
-                alt="Rev0 Campaign"
-                fill
-                className="object-contain border-4 border-black shadow-xl"
-                priority
-              />
-            </div>
-
-            {/* Rev0 DevOps Image - Second */}
-            <div className="relative w-full h-[350px] mx-auto">
-              <Image
-                src="/screenshots/rev0-devops.png"
-                alt="Rev0 DevOps"
-                fill
-                className="object-contain border-4 border-black shadow-xl"
-                priority
-              />
-            </div>
-
-            {/* Rev0 Sales Image - Third */}
-            <div className="relative w-full h-[350px] mx-auto">
-              <Image
-                src="/screenshots/rev0-sales.png"
-                alt="Rev0 Sales"
-                fill
-                className="object-contain border-4 border-black shadow-xl"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Founder Framework Section */}
-      <FounderFramework />
+      {/* Project Images Section Removed */}
 
       {/* Founder Interviews Section */}
       <section id="videos" className="bg-black text-white pt-16 pb-32">
@@ -342,6 +237,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Founder Framework Section */}
+      <FounderFramework />
 
       {/* Essays Section */}
       <section id="essays" className="bg-[#F2F2F2] text-black py-16 px-4 md:px-8">
