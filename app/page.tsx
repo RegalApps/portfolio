@@ -41,11 +41,11 @@ export default function Home() {
               </div>
               <div className="absolute top-[calc(6.98rem+10rem)] -left-4">
                 <Image 
-                  src="/images/b2b_image.png" 
-                  alt="B2B Image" 
+                  src="/images/b2b_logo.png" 
+                  alt="B2B Logo" 
                   width={800} 
                   height={200} 
-                  className="w-auto h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72"
+                  className="w-auto h-24 sm:h-32 md:h-40 lg:h-48 xl:h-56 2xl:h-64"
                 />
               </div>
             </div>
