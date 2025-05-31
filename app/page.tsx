@@ -74,9 +74,6 @@ export default function Home() {
 
             {/* Navigation with fixed positioning */}
             <div className="absolute bottom-4 left-8 z-50 flex flex-col space-y-1 bg-black bg-opacity-80 p-1 md:p-0 md:bg-transparent">
-              <Link href="#project-images" className="hover:opacity-80 transition-opacity">
-                PROJECTS.
-              </Link>
               <Link href="#videos" className="hover:opacity-80 transition-opacity">
                 VIDEOS.
               </Link>
