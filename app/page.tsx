@@ -34,12 +34,12 @@ export default function Home() {
           {/* Middle black section with flex-grow to adapt length */}
           <div className="bg-black text-white flex-grow w-full px-12 flex flex-col justify-between relative z-10">
             {/* Left-aligned text with adjusted positioning - moved up */}
-            <div className="mt-8 md:mt-12 relative h-[calc(6.98rem+6.98rem+70px)]">
+            <div className="mt-8 md:mt-12 relative h-[calc(6.98rem+6.98rem+100px)] sm:h-[calc(6.98rem+6.98rem+150px)]">
               <div className="absolute top-[20px] -left-4 text-[6.98rem] leading-none">KAZI</div>
-              <div className="absolute top-[calc(6.98rem+20px)] -left-4 text-[1.85rem] sm:text-[6.98rem] font-normal leading-none">
+              <div className="absolute top-[calc(6.98rem+20px)] -left-4 text-[3rem] sm:text-[6.98rem] font-normal leading-none">
                 IS BUILDING
               </div>
-              <div className="absolute top-[calc(6.98rem+10rem)] -left-4">
+              <div className="absolute top-[calc(6.98rem+5rem)] sm:top-[calc(6.98rem+10rem)] -left-4">
                 <Image 
                   src="/images/b2b_logo.png" 
                   alt="B2B Logo" 
