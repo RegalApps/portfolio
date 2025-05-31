@@ -61,7 +61,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Kazi Hossain" />
         <meta name="twitter:description" content="Founder, creator and lover of B2B SaaS" />
         <meta name="twitter:image" content="https://www.kazihossain.com/images/Kazi_fb.png" />
-        <meta name="twitter:creator" content="@kazihossain" />
+        <meta name="twitter:creator" content="@wolfofbaystreet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -69,13 +69,13 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Person',
               name: 'Kazi Hossain',
-              alternateName: 'KAZI UNCENSORED',
+              alternateName: 'KAZI HOSSAIN',
               url: 'https://www.kazihossain.com',
               jobTitle: 'Founder',
               description: 'Founder, creator and lover of B2B SaaS',
               sameAs: [
-                'https://linkedin.com/in/kazihossain',
-                'https://twitter.com/kazihossain'
+                'https://linkedin.com/in/kazihossain1',
+                'https://twitter.com/wolfofbaystreet'
               ]
             })
           }}

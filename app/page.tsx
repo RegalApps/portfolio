@@ -37,7 +37,16 @@ export default function Home() {
             <div className="mt-8 md:mt-12 relative h-[calc(6.98rem+6.98rem+70px)]">
               <div className="absolute top-[20px] -left-4 text-[6.98rem] leading-none">KAZI</div>
               <div className="absolute top-[calc(6.98rem+20px)] -left-4 text-[1.85rem] sm:text-[6.98rem] font-normal leading-none">
-                UNCENSORED
+                IS BUILDING
+              </div>
+              <div className="absolute top-[calc(6.98rem+10rem)] -left-4">
+                <Image 
+                  src="/images/b2b_image.png" 
+                  alt="B2B Image" 
+                  width={800} 
+                  height={200} 
+                  className="w-auto h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72"
+                />
               </div>
             </div>
 
@@ -435,7 +444,7 @@ export default function Home() {
             
             {/* Farcaster */}
             <a 
-              href="https://warpcast.com/kazi" 
+              href="https://farcaster.com/kazi" 
               target="_blank" 
               rel="noopener noreferrer"
               className="transform transition-transform hover:scale-110"
